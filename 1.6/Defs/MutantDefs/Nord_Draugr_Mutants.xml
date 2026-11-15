@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <MutantDef ParentName="BaseMutantEntity" MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>ESCP_Mutant_Draugr</defName>
+        <label>draugr</label>
+        <description>The walking dead of the old Nord barrows. Draugr were buried with their weapons and woken by the rites that sealed them in, and they guard their tombs against anyone who enters. They cannot be bargained with, captured or commanded.</description>
+        <hediff>ESCP_Hediff_Draugr</hediff>
+        <thinkTree>Shambler</thinkTree>
+        <thinkTreeConstant>ShamblerConstant</thinkTreeConstant>
+        <hideLabel>true</hideLabel>
+        <useCorpseGraphics>true</useCorpseGraphics>
+        <isConsideredCorpse>true</isConsideredCorpse>
+        <entitledToMedicalCare>false</entitledToMedicalCare>
+        <restoreLegs>true</restoreLegs>
+        <defaultFaction>AncientsHostile</defaultFaction>
+        <makesFootprints>false</makesFootprints>
+        <tameable>false</tameable>
+        <canTravelInCaravan>false</canTravelInCaravan>
+        <respectsAllowedArea>false</respectsAllowedArea>
+        <disableFlying>true</disableFlying>
+        <canGainXP>false</canGainXP>
+        <canBeDrafted>false</canBeDrafted>
+        <canBeCapturedToHoldingPlatform>false</canBeCapturedToHoldingPlatform>
+        <producesBioferrite>false</producesBioferrite>
+        <disableHostilityResponse>true</disableHostilityResponse>
+        <woundColor>(0.35, 0.4, 0.5, 1.0)</woundColor>
+        <anomalyKnowledgeOffset>0</anomalyKnowledgeOffset>
+        <soundAttackChance>0.25</soundAttackChance>
+        <soundCall>Pawn_Shambler_Call</soundCall>
+        <soundAttack>Pawn_Shambler_Attack</soundAttack>
+        <soundWounded>Pawn_Shambler_Wounded</soundWounded>
+        <soundDeath>Pawn_Shambler_Killed</soundDeath>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Overlay">
+                <debugLabel>Draugr wounds</debugLabel>
+                <workerClass>ESCP.Core.PawnRenderNodeWorker_OverlayDraugr</workerClass>
+                <overlayLayer>Body</overlayLayer>
+                <baseLayer>20</baseLayer>
+                <pawnType>HumanlikeOnly</pawnType>
+            </li>
+        </renderNodeProperties>
+    </MutantDef>
+
+</Defs>
