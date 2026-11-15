@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="ESCP_Nord_UniqueCharacterBase" ParentName="ESCP_NordkindBase" Abstract="true">
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <combatPower>200</combatPower>
+        <apparelMoney>9999</apparelMoney>
+        <gearHealthRange>10</gearHealthRange>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <weaponMoney>9999</weaponMoney>
+        <maxGenerationAge>99</maxGenerationAge>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <disallowedTraits>
+            <li>Brawler</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Nord_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Nord_High_King</defName>
+        <label>High King</label>
+        <factionLeader>true</factionLeader>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>ESCP_Nord_Thane</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Noble_Child</li>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Thane</li>
+                    <li>ESCP_Backstory_Nord_Huscarl</li>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+            <ESCP_Trait_Nord_Battle_Cry>0</ESCP_Trait_Nord_Battle_Cry>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Nord_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Jarl</defName>
+        <label>Jarl of Windhelm</label>
+        <defaultFactionDef>ESCP_Faction_Stormcloaks</defaultFactionDef>
+        <factionLeader>true</factionLeader>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>ESCP_Nord_Thane</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Noble_Child</li>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Huscarl</li>
+                    <li>ESCP_Backstory_Nord_Thane</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+            <ESCP_Trait_Nord_Battle_Cry>0</ESCP_Trait_Nord_Battle_Cry>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Nord_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Hold_Jarl</defName>
+        <label>Jarl</label>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>ESCP_Nord_Thane</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Noble_Child</li>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Huscarl</li>
+                    <li>ESCP_Backstory_Nord_Thane</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+            <ESCP_Trait_Nord_Battle_Cry>0</ESCP_Trait_Nord_Battle_Cry>
+        </forcedTraits>
+    </PawnKindDef>
+
+</Defs>

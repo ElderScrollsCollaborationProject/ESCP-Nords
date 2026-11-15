@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Factions.FactionSplitDef>
+        <defName>ESCP_FactionSplit_SkyrimSundering</defName>
+        <label>the Sundering of Skyrim</label>
+        <description>High King Jorunn has bound Skyrim to the Ebonheart Pact, and the western jarls want no part of it. They will not fight beside Dunmer for a throne in Cyrodiil, and Solitude has started calling its own jarl High King.\n\nHaafingar, Hjaalmarch and the Reach would follow Solitude if it comes to that. The rest would stay with Windhelm.\n\nHow does this end?</description>
+        <loyalFaction>ESCP_Faction_Kingdom_of_Skyrim</loyalFaction>
+        <rebelFaction>ESCP_Faction_WesternSkyrim</rebelFaction>
+        <daysAfterStart>20</daysAfterStart>
+        <option>ESCP_Option_SkyrimSundering</option>
+        <eras>
+            <li>2</li>
+        </eras>
+        <settlements>
+            <li>Solitude</li>
+            <li>Dragon Bridge</li>
+            <li>Fort Hraggstad</li>
+            <li>Morthal</li>
+            <li>Stonehills</li>
+            <li>Fort Snowhawk</li>
+            <li>Markarth</li>
+            <li>Karthwasten</li>
+            <li>Old Hroldan</li>
+            <li>Fort Sungard</li>
+        </settlements>
+        <acceptLabel>The west goes its own way. Skyrim is split in two.</acceptLabel>
+        <refuseLabel>The jarls are talked down. Skyrim stays whole.</refuseLabel>
+        <letterLabel>Sundering of Skyrim</letterLabel>
+        <letterText>The western jarls have refused High King Jorunn and named Svargrim of Solitude their own High King. Haafingar, Hjaalmarch and the Reach now answer to Solitude as the Kingdom of Western Skyrim.\n\nWindhelm still holds the east and keeps its place in the Ebonheart Pact. The west wants nothing to do with the war.</letterText>
+    </ESCP.Factions.FactionSplitDef>
+
+</Defs>

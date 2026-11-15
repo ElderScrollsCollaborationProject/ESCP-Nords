@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ESCP.Ranks.RankTrackDef>
+        <defName>ESCP_RankTrack_KingdomOfSkyrim</defName>
+        <label>the High King's men ranks</label>
+        <rootTier>ESCP_Rank_KingdomOfSkyrim_Levy</rootTier>
+        <owningFaction>ESCP_Faction_Kingdom_of_Skyrim</owningFaction>
+        <collectiveNoun>the High King's men</collectiveNoun>
+        <drillLabel>Sparring</drillLabel>
+        <drillDesc>Train with any colonist. Both stop what they are doing and both gain skill XP. Once per day.</drillDesc>
+        <studyLabel>Hear the Sagas</studyLabel>
+        <studyDesc>Study with another member. Both gain skill XP. Once per day.</studyDesc>
+        <inspectLabel>Check Their Shield</inspectLabel>
+        <inspectDesc>Look over a junior member's gear. Good upkeep earns praise and poor upkeep earns a sharp word.</inspectDesc>
+        <punishLabel>Send to Muck the Stables...</punishLabel>
+        <punishDesc>Set a junior member to tedious labor for a failure, souring their mood. Once per day per member.</punishDesc>
+        <rallyLabel>For Skyrim!</rallyLabel>
+        <rallyDesc>Call on {0} to fight harder for a short while. Once every few days.</rallyDesc>
+        <fallInLabel>To the Hall</fallInLabel>
+        <fallInDesc>Order {0} to gather behind you, up to four deep. They hold position until released.</fallInDesc>
+        <dismissLabel>Back to the Hold</dismissLabel>
+        <dismissDesc>Release {0} so they can return to their duties.</dismissDesc>
+    </ESCP.Ranks.RankTrackDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_KingdomOfSkyrim_Levy</defName>
+        <label>levy</label>
+        <description>Called up from the hold to carry a spear when the jarl needs one.</description>
+        <nextTierOptions>
+            <li>ESCP_Rank_KingdomOfSkyrim_HoldGuard</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_KingdomOfSkyrim_HoldGuard</defName>
+        <label>hold guard</label>
+        <description>Wears the hold's colors and keeps the peace in its streets.</description>
+        <minDaysInRank>4</minDaysInRank>
+        <skillRequirements>
+            <Melee>5</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>1</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>400</Melee>
+            <Shooting>200</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_KingdomOfSkyrim_Housecarl</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_KingdomOfSkyrim_Housecarl</defName>
+        <label>housecarl</label>
+        <description>Sworn to guard a jarl or thane with their life.</description>
+        <minDaysInRank>9</minDaysInRank>
+        <skillRequirements>
+            <Melee>8</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>500</Melee>
+            <Shooting>250</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_KingdomOfSkyrim_Thane</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_KingdomOfSkyrim_Thane</defName>
+        <label>thane</label>
+        <description>Honored by a jarl with land, rights and the ear of the court.</description>
+        <minDaysInRank>14</minDaysInRank>
+        <skillRequirements>
+            <Melee>11</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>4</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>600</Melee>
+            <Shooting>300</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Veteran</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_KingdomOfSkyrim_HighKingsChampion</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_KingdomOfSkyrim_HighKingsChampion</defName>
+        <label>High King's champion</label>
+        <description>Fights in the High King's name when Skyrim's honor is at stake.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Melee>14</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>6</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>700</Melee>
+            <Shooting>350</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Veteran</expedition>
+        <discipline>Combat</discipline>
+    </ESCP.Ranks.RankTierDef>
+
+</Defs>

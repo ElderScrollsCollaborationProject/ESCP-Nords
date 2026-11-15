@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_NordJarl</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Jarl</pawnKind>
+        <faction>ESCP_Faction_Stormcloaks</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Windhelm</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Ulfric</firstName>
+                <lastName>Stormcloak</lastName>
+                <nickname>Jarl of Windhelm</nickname>
+                <gender>Male</gender>
+                <age>45</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 120, 90)</hairColor>
+                <hairDef>ShortCut</hairDef>
+                <beardDef>Bushy</beardDef>
+                <skinColorOverride>(215, 195, 175)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li MayRequire="Rick.ESCP.Greybeards">
+                        <key>ESCP_Trait_WayOfTheVoice</key>
+                        <value>0</value>
+                    </li>
+                </traits>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_ElisifTheFair</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Nord_High_King</pawnKind>
+        <faction>ESCP_Faction_Kingdom_of_Skyrim</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Solitude</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Elisif</firstName>
+                <lastName>the Fair</lastName>
+                <nickname>High Queen of Skyrim</nickname>
+                <gender>Female</gender>
+                <age>30</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(220, 190, 120)</hairColor>
+                <hairDef>Flowy</hairDef>
+                <skinColorOverride>(225, 205, 185)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_ToryggHighKing</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Nord_High_King</pawnKind>
+        <faction>ESCP_Faction_Kingdom_of_Skyrim</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1200</seniority>
+            </li>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Solitude</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Torygg</firstName>
+                <lastName>Skyrim</lastName>
+                <nickname>High King</nickname>
+                <gender>Male</gender>
+                <age>35</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(190, 150, 100)</hairColor>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Spouse</relation>
+                        <otherCharacter>ESCP_Character_ElisifTheFair</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_BalgruufTheGreater</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Hold_Jarl</pawnKind>
+        <faction>ESCP_Faction_Kingdom_of_Skyrim</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Whiterun</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Balgruuf</firstName>
+                <lastName>Whiterun</lastName>
+                <nickname>the Greater</nickname>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 95, 70)</hairColor>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Igmund</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Hold_Jarl</pawnKind>
+        <faction>ESCP_Faction_Kingdom_of_Skyrim</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Markarth</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Igmund</firstName>
+                <lastName>Markarth</lastName>
+                <nickname>Jarl of the Reach</nickname>
+                <gender>Male</gender>
+                <age>35</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 85, 60)</hairColor>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Siddgeir</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Hold_Jarl</pawnKind>
+        <faction>ESCP_Faction_Kingdom_of_Skyrim</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Falkreath</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Siddgeir</firstName>
+                <lastName>Falkreath</lastName>
+                <nickname>Jarl of Falkreath</nickname>
+                <gender>Male</gender>
+                <age>30</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 120, 90)</hairColor>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_IdgrodRavencrest</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Hold_Jarl</pawnKind>
+        <faction>ESCP_Faction_Kingdom_of_Skyrim</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Morthal</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Idgrod</firstName>
+                <lastName>Ravencrest</lastName>
+                <nickname>Jarl of Hjaalmarch</nickname>
+                <gender>Female</gender>
+                <age>60</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(170, 170, 170)</hairColor>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_LailaLawGiver</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Hold_Jarl</pawnKind>
+        <faction>ESCP_Faction_Stormcloaks</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Riften</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Laila</firstName>
+                <lastName>Riften</lastName>
+                <nickname>Law-Giver</nickname>
+                <gender>Female</gender>
+                <age>50</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 110, 80)</hairColor>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_SkaldTheElder</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Hold_Jarl</pawnKind>
+        <faction>ESCP_Faction_Stormcloaks</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Dawnstar</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Skald</firstName>
+                <lastName>Dawnstar</lastName>
+                <nickname>the Elder</nickname>
+                <gender>Male</gender>
+                <age>70</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(200, 200, 200)</hairColor>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterHediffDefinition">
+                <hediffDef>BadBack</hediffDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Korir</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Hold_Jarl</pawnKind>
+        <faction>ESCP_Faction_Stormcloaks</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Winterhold</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Korir</firstName>
+                <lastName>Winterhold</lastName>
+                <nickname>Jarl of Winterhold</nickname>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 90, 75)</hairColor>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_JorunnSkaldKing</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Nord_High_King</pawnKind>
+        <faction>ESCP_Faction_Kingdom_of_Skyrim</faction>
+        <eras>
+            <li>2</li>
+        </eras>
+        <exactEra>true</exactEra>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1100</seniority>
+            </li>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Windhelm</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Jorunn</firstName>
+                <lastName>Skald-King</lastName>
+                <nickname>High King of Eastern Skyrim</nickname>
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(170, 110, 60)</hairColor>
+                <hairDef>Mop</hairDef>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(220, 200, 180)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_SvargrimHighKing</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Nord_High_King</pawnKind>
+        <faction>ESCP_Faction_WesternSkyrim</faction>
+        <eras>
+            <li>2</li>
+        </eras>
+        <exactEra>true</exactEra>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+            <li Class="ESCP.Core.CharacterRole_Jarl">
+                <settlement>Solitude</settlement>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Svargrim</firstName>
+                <lastName>Solitude</lastName>
+                <nickname>High King of Western Skyrim</nickname>
+                <gender>Male</gender>
+                <age>62</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(215, 215, 210)</hairColor>
+                <hairDef>ShortCut</hairDef>
+                <beardDef>Bushy</beardDef>
+                <skinColorOverride>(225, 205, 190)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+</Defs>

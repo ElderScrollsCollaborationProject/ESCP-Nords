@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ESCP.Core.ModOptionDef>
+        <defName>ESCP_Option_SkyrimCivilWar</defName>
+        <label>Skyrim civil war</label>
+        <description>Around day 30, Ulfric Stormcloak challenges High King Torygg and you decide whether it comes to war. If it does, four holds break away as the Stormcloak Rebellion and both sides later ask you to join them. The side you join sends soldiers when the other side raids you, and asks for help holding its towns. Turn this off to keep Skyrim whole. Only happens when characters are set to all eras or the Fourth Era, and not if Skyrim has already split in the Sundering.</description>
+        <defaultValue>true</defaultValue>
+        <worldGenOnly>true</worldGenOnly>
+    </ESCP.Core.ModOptionDef>
+
+    <ESCP.Core.ModOptionDef>
+        <defName>ESCP_Option_SkyrimSundering</defName>
+        <label>Sundering of Skyrim</label>
+        <description>Around day 20, the western jarls refuse to follow High King Jorunn into the Ebonheart Pact and you decide whether Skyrim splits. If it does, Haafingar, Hjaalmarch and the Reach break away as the Kingdom of Western Skyrim under Svargrim. Only happens when characters are set to all eras or the Second Era. If the west breaks away, the civil war won't come later in the same world.</description>
+        <defaultValue>true</defaultValue>
+        <worldGenOnly>true</worldGenOnly>
+    </ESCP.Core.ModOptionDef>
+
+</Defs>

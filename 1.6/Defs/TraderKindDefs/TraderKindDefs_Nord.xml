@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraderKindDef>
+        <defName>ESCP_Caravan_Nord_Trader</defName>
+        <label>Nord trader</label>
+        <modExtensions>
+            <li Class="ESCP.Currencies.CurrencyReplacement">
+                <currency>ESCP_Currency_Septims</currency>
+            </li>
+        </modExtensions>
+
+        <stockGenerators>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Pemmican</thingDef>
+                <countRange>80~200</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MealSurvivalPack</thingDef>
+                <countRange>20~50</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Beer</thingDef>
+                <countRange>30~80</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Leather_Plain</thingDef>
+                <countRange>60~160</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Steel</thingDef>
+                <countRange>100~250</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WoodLog</thingDef>
+                <countRange>80~200</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineHerbal</thingDef>
+                <countRange>6~18</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>200~600</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Gold</thingDef>
+                <countRange>8~30</countRange>
+            </li>
+
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Art</tag>
+            </li>
+
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>ExoticMisc</tag>
+            </li>
+
+        </stockGenerators>
+
+        <tradeCurrency>Silver</tradeCurrency>
+
+    </TraderKindDef>
+
+    <TraderKindDef>
+        <defName>ESCP_Caravan_Nord_Quartermaster</defName>
+        <label>Nord quartermaster</label>
+        <modExtensions>
+            <li Class="ESCP.Currencies.CurrencyReplacement">
+                <currency>ESCP_Currency_Septims</currency>
+            </li>
+        </modExtensions>
+
+        <stockGenerators>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Steel</thingDef>
+                <countRange>120~300</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Leather_Plain</thingDef>
+                <countRange>40~100</countRange>
+            </li>
+
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>WeaponMelee</tradeTag>
+                <countRange>4~10</countRange>
+            </li>
+
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>Apparel</tradeTag>
+                <countRange>3~8</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Pemmican</thingDef>
+                <countRange>100~240</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Beer</thingDef>
+                <countRange>20~60</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineHerbal</thingDef>
+                <countRange>10~25</countRange>
+            </li>
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>150~400</countRange>
+            </li>
+
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>WeaponMelee</tag>
+            </li>
+
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Apparel</tag>
+            </li>
+
+        </stockGenerators>
+
+        <tradeCurrency>Silver</tradeCurrency>
+
+    </TraderKindDef>
+
+</Defs>

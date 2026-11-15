@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_Stormcloaks>Blooded by:</ESCP_Rank_Mentor_Stormcloaks>
+    <ESCP_Rank_Promote_Stormcloaks>Earn the Next Name</ESCP_Rank_Promote_Stormcloaks>
+    <ESCP_Rank_Promoted_Text_Stormcloaks>{0} has earned a new name among the Stormcloaks: {1}.</ESCP_Rank_Promoted_Text_Stormcloaks>
+    <ESCP_Rank_Rally_Title_Stormcloaks>{0} rallies Skyrim's true sons and daughters</ESCP_Rank_Rally_Title_Stormcloaks>
+    <ESCP_Rank_Rally_Text_Stormcloaks>{0} shouts Ulfric's cause, and every one of {1} on the field fights like a blizzard.</ESCP_Rank_Rally_Text_Stormcloaks>
+    <ESCP_Rank_InspectionComplete_Commended_Stormcloaks>{0} checks {1}'s axe. Keen enough to split an Imperial helm.</ESCP_Rank_InspectionComplete_Commended_Stormcloaks>
+    <ESCP_Rank_InspectionComplete_Reprimanded_Stormcloaks>{0} checks {1}'s axe and says Talos would weep at the sight.</ESCP_Rank_InspectionComplete_Reprimanded_Stormcloaks>
+    <ESCP_Rank_PunishmentAssigned_Stormcloaks>{0} sends {1} to chop firewood for the camp.</ESCP_Rank_PunishmentAssigned_Stormcloaks>
+
+</LanguageData>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="ESCP_NordkindBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>ESCP_Faction_Kingdom_of_Skyrim</defaultFactionDef>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ESCP_Xenotype_Nord MayRequire="Ludeon.RimWorld.Biotech">1</ESCP_Xenotype_Nord>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <maxGenerationAge>60</maxGenerationAge>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <invNutrition>2.7</invNutrition>
+        <invFoodDef>MealSurvivalPack</invFoodDef>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Citizen</defName>
+        <label>Nord citizen</label>
+        <combatPower>35</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>250~500</apparelMoney>
+        <apparelTags>
+            <li>ESCP_Nord_Citizen</li>
+        </apparelTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~16</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Merchant</defName>
+        <label>Nord merchant</label>
+        <combatPower>40</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.6~2.0</gearHealthRange>
+        <apparelMoney>400~800</apparelMoney>
+        <apparelTags>
+            <li>ESCP_Nord_Citizen</li>
+        </apparelTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.1</techHediffsChance>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>8~14</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Merchant</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Skald</defName>
+        <label>Nord skald</label>
+        <combatPower>40</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>300~600</apparelMoney>
+        <apparelTags>
+            <li>ESCP_Nord_Citizen</li>
+        </apparelTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>8~14</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Skald</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Skald_Verse>0</ESCP_Trait_Nord_Skald_Verse>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Trader</defName>
+        <label>Nord trader</label>
+        <trader>true</trader>
+        <combatPower>45</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.6~2.0</gearHealthRange>
+        <apparelMoney>400~800</apparelMoney>
+        <apparelTags>
+            <li>ESCP_Nord_Citizen</li>
+        </apparelTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>8~14</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Merchant</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Quartermaster</defName>
+        <label>Nord quartermaster</label>
+        <trader>true</trader>
+        <combatPower>65</combatPower>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>0.7~2.0</gearHealthRange>
+        <apparelMoney>200~350</apparelMoney>
+        <apparelTags>
+            <li>ESCP_Nord_Warrior</li>
+        </apparelTags>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>12~18</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Warrior</defName>
+        <label>Nord warrior</label>
+        <combatPower>65</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>150~300</apparelMoney>
+        <weaponMoney>200~400</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>2~5</initialWillRange>
+        <initialResistanceRange>14~20</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.75</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>Silver</thingDef>
+                    <countRange>5~20</countRange>
+                </li>
+                <li>
+                    <thingDef>Pemmican</thingDef>
+                    <countRange>3~8</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Archer</defName>
+        <label>Nord archer</label>
+        <combatPower>55</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>100~200</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <weaponTags>
+            <li>SimpleRangedWeapon</li>
+            <li>BowAndArrow</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>12~18</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.75</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>Silver</thingDef>
+                    <countRange>5~20</countRange>
+                </li>
+                <li>
+                    <thingDef>Pemmican</thingDef>
+                    <countRange>3~8</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Berserker</defName>
+        <label>Nord berserker</label>
+        <combatPower>85</combatPower>
+        <itemQuality>Good</itemQuality>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>200~400</apparelMoney>
+        <weaponMoney>300~600</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Wimp</li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>16~24</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Battle_Cry>0</ESCP_Trait_Nord_Battle_Cry>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Huscarl</defName>
+        <label>Nord huscarl</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>0.7~2.2</gearHealthRange>
+        <apparelMoney>400~800</apparelMoney>
+        <weaponMoney>400~700</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <techHediffsMoney>75~150</techHediffsMoney>
+        <techHediffsTags>
+            <li>Normal</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <initialWillRange>3~6</initialWillRange>
+        <initialResistanceRange>18~26</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Huscarl</li>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+            <ESCP_Trait_Nord_Battle_Cry>0</ESCP_Trait_Nord_Battle_Cry>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Thane</defName>
+        <label>Nord thane</label>
+        <combatPower>130</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.8~2.5</gearHealthRange>
+        <apparelMoney>800~1600</apparelMoney>
+        <weaponMoney>600~1000</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <techHediffsMoney>100~200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Normal</li>
+        </techHediffsTags>
+        <techHediffsChance>0.25</techHediffsChance>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>20~30</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Noble_Child</li>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Thane</li>
+                    <li>ESCP_Backstory_Nord_Huscarl</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase">
+        <defName>ESCP_Pawnkind_Nord_Settler</defName>
+        <label>Nord settler</label>
+        <defaultFactionDef>ESCP_Faction_Nord_Player</defaultFactionDef>
+        <combatPower>30</combatPower>
+        <isFighter>false</isFighter>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <apparelTags>
+            <li>MedievalBasic</li>
+        </apparelTags>
+        <initialWillRange>0~0</initialWillRange>
+        <initialResistanceRange>13~21</initialResistanceRange>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+</Defs>

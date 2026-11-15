@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_Skaal>Elder:</ESCP_Rank_Mentor_Skaal>
+    <ESCP_Rank_Promote_Skaal>Honor Before the Village</ESCP_Rank_Promote_Skaal>
+    <ESCP_Rank_Promoted_Text_Skaal>The elders agree. {0} now walks among the Skaal as {1}.</ESCP_Rank_Promoted_Text_Skaal>
+    <ESCP_Rank_Rally_Title_Skaal>{0} calls on the All-Maker</ESCP_Rank_Rally_Title_Skaal>
+    <ESCP_Rank_Rally_Text_Skaal>{0} calls on the All-Maker's strength, and every one of {1} on the field feels the wind at their back.</ESCP_Rank_Rally_Text_Skaal>
+    <ESCP_Rank_InspectionComplete_Commended_Skaal>{0} checks {1}'s bow. The All-Maker would approve.</ESCP_Rank_InspectionComplete_Commended_Skaal>
+    <ESCP_Rank_InspectionComplete_Reprimanded_Skaal>{0} checks {1}'s bow. Waste and neglect anger the All-Maker.</ESCP_Rank_InspectionComplete_Reprimanded_Skaal>
+    <ESCP_Rank_PunishmentAssigned_Skaal>{0} sends {1} to gather firewood in the cold.</ESCP_Rank_PunishmentAssigned_Skaal>
+
+</LanguageData>

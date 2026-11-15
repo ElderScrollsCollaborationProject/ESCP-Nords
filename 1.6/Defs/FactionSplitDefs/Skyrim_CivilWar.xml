@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Factions.FactionSplitDef>
+        <defName>ESCP_FactionSplit_SkyrimCivilWar</defName>
+        <label>the fate of Skyrim</label>
+        <description>Ulfric Stormcloak, Jarl of Eastmarch, has ridden to Solitude and called out High King Torygg. Riders say the old ways allow it. Solitude's court says the Empire does not, and the Thalmor are watching both.\n\nFour holds would follow Ulfric if it comes to blood. The others would stand with Solitude.\n\nHow does this end?</description>
+        <loyalFaction>ESCP_Faction_Kingdom_of_Skyrim</loyalFaction>
+        <rebelFaction>ESCP_Faction_Stormcloaks</rebelFaction>
+        <daysAfterStart>30</daysAfterStart>
+        <option>ESCP_Option_SkyrimCivilWar</option>
+        <eras>
+            <li>4</li>
+        </eras>
+        <slainCharacter>ESCP_Character_ToryggHighKing</slainCharacter>
+        <settlements>
+            <li>Windhelm</li>
+            <li>Kynesgrove</li>
+            <li>Darkwater Crossing</li>
+            <li>Fort Amol</li>
+            <li>Riften</li>
+            <li>Ivarstead</li>
+            <li>Shor's Stone</li>
+            <li>Fort Greenwall</li>
+            <li>Dawnstar</li>
+            <li>Fort Dunstad</li>
+            <li>Winterhold</li>
+            <li>Fort Kastav</li>
+        </settlements>
+        <acceptLabel>Ulfric shouts Torygg apart. The war begins.</acceptLabel>
+        <refuseLabel>The challenge is withdrawn. Skyrim stays whole.</refuseLabel>
+        <letterLabel>Stormcloak Rebellion</letterLabel>
+        <letterText>Ulfric Stormcloak has killed High King Torygg with the Voice in his own hall. Elisif the Fair now rules from Solitude with the Legion behind her.\n\nEastmarch, the Rift, the Pale and Winterhold have declared for Ulfric. Their jarls, towns and forts now belong to the Stormcloak Rebellion, and the two sides are at war.</letterText>
+        <loyalAllies>
+            <li MayRequire="Rick.ESCP.Imperials">ESCP_Faction_Imperial</li>
+        </loyalAllies>
+        <sideChoiceDelayDays>3</sideChoiceDelayDays>
+        <joinGoodwill>80</joinGoodwill>
+        <sideChoiceLabel>Recruiters</sideChoiceLabel>
+        <sideChoiceText>Two riders came in on the same afternoon and have been glaring at each other across the fire since. One wears Legion red and carries a letter under Jarl Elisif's seal. The other wears Stormcloak blue and says Ulfric sent him personally.\n\nBoth want fighters, and both promise the colony will be remembered when the war is won. Whichever side you join, the other will treat you as an enemy. If you stay out of it, neither will owe you anything.</sideChoiceText>
+        <joinLoyalLabel>Swear to Elisif and the Legion.</joinLoyalLabel>
+        <joinRebelLabel>Take up the blue and fight for Ulfric.</joinRebelLabel>
+        <stayOutLabel>Send them both home. This is not our war.</stayOutLabel>
+    </ESCP.Factions.FactionSplitDef>
+
+</Defs>

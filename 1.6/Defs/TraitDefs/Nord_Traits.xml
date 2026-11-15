@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Nord_Hardiness</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Nord hardiness</label>
+                <description>Tempered by Skyrim's killing winters and a life of hard labor, this pawn endures what would shatter others. Cold barely registers, pain is an old acquaintance rather than a shock, and their stride does not slow when others falter.</description>
+                <statOffsets>
+                    <PainShockThreshold>0.08</PainShockThreshold>
+                    <MoveSpeed>0.08</MoveSpeed>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Nord_Battle_Cry</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Nord battle cry</label>
+                <description>This pawn fights with the fearless fury of Skyrim's warrior culture. The thrill of battle sharpens their strikes and dulls their fear. They close distance with reckless confidence and their blade finds its mark where others hesitate.</description>
+                <statOffsets>
+                    <MeleeHitChance>0.08</MeleeHitChance>
+                    <IncomingDamageFactor>-0.06</IncomingDamageFactor>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Nord_Skald_Verse</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>skald's verse</label>
+                <description>Trained in the ancient craft of the skald, this pawn carries the songs and sagas of dead heroes. Their presence lifts the spirits of those around them and their words carry the weight of remembered glory.</description>
+                <statOffsets>
+                    <SocialImpact>0.15</SocialImpact>
+                    <NegotiationAbility>0.08</NegotiationAbility>
+                </statOffsets>
+                <skillGains>
+                    <Social>2</Social>
+                    <Artistic>2</Artistic>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+</Defs>

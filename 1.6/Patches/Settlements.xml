@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/FactionDef[defName="ESCP_Faction_Kingdom_of_Skyrim"]</xpath>
+        <value>
+            <li Class="ESCP.Factions.FactionExtension_NamedSettlement">
+                <settlementNames>
+                    <li>Whiterun</li>
+                    <li>Riverwood</li>
+                    <li>Rorikstead</li>
+                    <li>Fort Greymoor</li>
+                    <li>Solitude</li>
+                    <li>Dragon Bridge</li>
+                    <li>Fort Hraggstad</li>
+                    <li>Morthal</li>
+                    <li>Stonehills</li>
+                    <li>Fort Snowhawk</li>
+                    <li>Markarth</li>
+                    <li>Karthwasten</li>
+                    <li>Old Hroldan</li>
+                    <li>Fort Sungard</li>
+                    <li>Falkreath</li>
+                    <li>Helgen</li>
+                    <li>Fort Neugrad</li>
+                    <li>Windhelm</li>
+                    <li>Kynesgrove</li>
+                    <li>Darkwater Crossing</li>
+                    <li>Fort Amol</li>
+                    <li>Riften</li>
+                    <li>Ivarstead</li>
+                    <li>Shor's Stone</li>
+                    <li>Fort Greenwall</li>
+                    <li>Dawnstar</li>
+                    <li>Fort Dunstad</li>
+                    <li>Winterhold</li>
+                    <li>Fort Kastav</li>
+                </settlementNames>
+                <preferredHilliness />
+                <clustered>true</clustered>
+                <allowedBiomes>
+                    <li>BorealForest</li>
+                    <li>Tundra</li>
+                </allowedBiomes>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_WesternSkyrim>Sworn to:</ESCP_Rank_Mentor_WesternSkyrim>
+    <ESCP_Rank_Promote_WesternSkyrim>Raise in the Hall</ESCP_Rank_Promote_WesternSkyrim>
+    <ESCP_Rank_Promoted_Text_WesternSkyrim>{0} has been named {1} by the court at Solitude.</ESCP_Rank_Promoted_Text_WesternSkyrim>
+    <ESCP_Rank_Rally_Title_WesternSkyrim>{0} calls the west to arms</ESCP_Rank_Rally_Title_WesternSkyrim>
+    <ESCP_Rank_Rally_Text_WesternSkyrim>{0} raises Solitude's banner, and every one of {1} on the field stands firm.</ESCP_Rank_Rally_Text_WesternSkyrim>
+    <ESCP_Rank_InspectionComplete_Commended_WesternSkyrim>{0} checks {1}'s blade and nods. Fit for Svargrim's hall.</ESCP_Rank_InspectionComplete_Commended_WesternSkyrim>
+    <ESCP_Rank_InspectionComplete_Reprimanded_WesternSkyrim>{0} checks {1}'s blade and sends them to the whetstone.</ESCP_Rank_InspectionComplete_Reprimanded_WesternSkyrim>
+    <ESCP_Rank_PunishmentAssigned_WesternSkyrim>{0} sends {1} to gut fish at the docks.</ESCP_Rank_PunishmentAssigned_WesternSkyrim>
+
+</LanguageData>

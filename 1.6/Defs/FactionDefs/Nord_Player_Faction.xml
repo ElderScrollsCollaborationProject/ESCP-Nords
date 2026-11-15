@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>ESCP_Faction_Nord_Player</defName>
+        <label>Nord Hold</label>
+        <description>A hold founded in the name of Skyrim's enduring people. Far from the mead halls of Windhelm and the stone gates of Whiterun, this settlement carries the traditions of the Nords into a harsh new frontier, and the people here intend to hold it.</description>
+        <isPlayer>true</isPlayer>
+        <techLevel>Medieval</techLevel>
+        <basicMemberKind>ESCP_Pawnkind_Nord_Settler</basicMemberKind>
+        <pawnSingular>Nord</pawnSingular>
+        <pawnsPlural>Nords</pawnsPlural>
+        <leaderTitle>Thane</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+        <colorSpectrum>
+            <li>(0.12, 0.62, 0.55)</li>
+        </colorSpectrum>
+        <xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+            <xenotypeChances>
+                <ESCP_Xenotype_Nord>1</ESCP_Xenotype_Nord>
+            </xenotypeChances>
+        </xenotypeSet>
+        <allowedCultures>
+            <li>ESCP_Culture_Nord</li>
+        </allowedCultures>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                    <li>ESCP_Backstory_Nord_Noble_Child</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                    <li>ESCP_Backstory_Nord_Skald</li>
+                    <li>ESCP_Backstory_Nord_Merchant</li>
+                    <li>ESCP_Backstory_Nord_Thane</li>
+                    <li>ESCP_Backstory_Nord_Huscarl</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+
+        <modExtensions>
+            <li Class="ESCP_RaceTools.FactionProperties">
+                <factionTags>
+                    <li>ESCP_TalosWorship</li>
+                </factionTags>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

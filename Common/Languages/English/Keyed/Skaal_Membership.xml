@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Skaal_Enlist_Letter_Title>Welcomed by the Skaal</ESCP_Skaal_Enlist_Letter_Title>
+    <ESCP_Skaal_Enlist_Letter_Label>The Skaal have taken the colony in as friends of the village. They have little coin, but they share their catch and their fire.</ESCP_Skaal_Enlist_Letter_Label>
+    <ESCP_Skaal_Enlist_Button_Label>Join the Skaal</ESCP_Skaal_Enlist_Button_Label>
+    <ESCP_Skaal_Enlist_Button_Desc>Live by the All-Maker's ways with the Skaal of Solstheim, who take only what the land gives.</ESCP_Skaal_Enlist_Button_Desc>
+    <ESCP_Skaal_Enlist_Requrements_Not_Satisfied>The Skaal are wary of outsiders, and of you. Standing: {0}.</ESCP_Skaal_Enlist_Requrements_Not_Satisfied>
+    <ESCP_Skaal_Enlisted_To_Hostile_Faction>The Skaal will not welcome those who have harmed them.</ESCP_Skaal_Enlisted_To_Hostile_Faction>
+    <ESCP_Skaal_Enlisted_With_Key>Friend of the Skaal</ESCP_Skaal_Enlisted_With_Key>
+    <ESCP_Skaal_Missions_Label>Village needs</ESCP_Skaal_Missions_Label>
+    <ESCP_Skaal_Missions_Desc>See what the shaman has asked for.</ESCP_Skaal_Missions_Desc>
+    <ESCP_Skaal_Menu_Missions_Desc>Tasks the village needs done. The Skaal pay what they can when it is finished.</ESCP_Skaal_Menu_Missions_Desc>
+    <ESCP_Skaal_Menu_Missions_Select_Quest>Select a job</ESCP_Skaal_Menu_Missions_Select_Quest>
+    <ESCP_Skaal_Menu_Missions_Start_Quest>Accept</ESCP_Skaal_Menu_Missions_Start_Quest>
+    <ESCP_Skaal_Menu_Missions_Collect_Bounty>Collect</ESCP_Skaal_Menu_Missions_Collect_Bounty>
+    <ESCP_Skaal_Provisions_Label>Share the catch</ESCP_Skaal_Provisions_Label>
+    <ESCP_Skaal_Provisions_Desc>Smoked horker and fish from the village stores.</ESCP_Skaal_Provisions_Desc>
+    <ESCP_Skaal_Storage_Label>Village longhouse</ESCP_Skaal_Storage_Label>
+    <ESCP_Skaal_Storage_Desc>Leave goods in the longhouse. Nobody in the village will touch them.</ESCP_Skaal_Storage_Desc>
+    <ESCP_Skaal_Resign_Menu_Text>Leave the Skaal? They will not be angry, only disappointed.</ESCP_Skaal_Resign_Menu_Text>
+    <ESCP_Skaal_Resign_Letter_Title>Left the Skaal</ESCP_Skaal_Resign_Letter_Title>
+    <ESCP_Skaal_Resign_Letter_Label>The colony has gone its own way. The Skaal wish you well, from a distance.</ESCP_Skaal_Resign_Letter_Label>
+    <ESCP_Skaal_Resign_Button_Label>Leave the village</ESCP_Skaal_Resign_Button_Label>
+    <ESCP_Skaal_Resign_Button_Desc>Part ways with the Skaal.</ESCP_Skaal_Resign_Button_Desc>
+    <ESCP_Skaal_Kick_Out_Letter_Title>Turned away by the Skaal</ESCP_Skaal_Kick_Out_Letter_Title>
+    <ESCP_Skaal_Kick_Out_Label_Title>The Skaal have decided the colony is no friend of the All-Maker.</ESCP_Skaal_Kick_Out_Label_Title>
+    <ESCP_Skaal_Salary_Label>Share of the trade</ESCP_Skaal_Salary_Label>
+    <ESCP_Skaal_Salary_Desc>A small share of what the village earns from passing ships.</ESCP_Skaal_Salary_Desc>
+    <ESCP_Skaal_Work_0_Label>Hunt on the ice</ESCP_Skaal_Work_0_Label>
+    <ESCP_Skaal_Work_0_Desc>Track horker and wolves across the frozen shore with Skaal hunters.</ESCP_Skaal_Work_0_Desc>
+    <ESCP_Skaal_Work_1_Label>Haul and trade at the docks</ESCP_Skaal_Work_1_Label>
+    <ESCP_Skaal_Work_1_Desc>Load furs onto the trade ships and take a share of the price.</ESCP_Skaal_Work_1_Desc>
+
+</LanguageData>

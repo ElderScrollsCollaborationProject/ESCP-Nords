@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AbilityDef>
+        <defName>ESCP_Ability_Nord_BattleCry</defName>
+        <label>battle cry</label>
+        <description>Nords carry the berserker tradition of Atmora in their blood, the same fury that drove their ancestors through Skyrim's hardest centuries. When the carrier calls it up deliberately the body responds: hits land harder, speed comes from somewhere beyond normal effort, and pain that would stop anyone else registers as background noise.</description>
+        <iconPath>UI/Abilities/Berserk</iconPath>
+        <aiCanUse>true</aiCanUse>
+        <hostile>false</hostile>
+        <targetRequired>false</targetRequired>
+        <showOnCharacterCard>true</showOnCharacterCard>
+        <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <statBases>
+            <Ability_Duration>12</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <requireLineOfSight>false</requireLineOfSight>
+            <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+            <warmupTime>0.5</warmupTime>
+            <range>0</range>
+            <targetable>false</targetable>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>ESCP_Hediff_Nord_BattleCry</hediffDef>
+                <onlyApplyToSelf>true</onlyApplyToSelf>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

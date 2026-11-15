@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_KingdomOfSkyrim_Enlist_Letter_Title>Sworn to the High King</ESCP_KingdomOfSkyrim_Enlist_Letter_Title>
+    <ESCP_KingdomOfSkyrim_Enlist_Letter_Label>The colony has sworn itself to the throne in Solitude. The jarls loyal to the High King will feed and pay those who fight for Skyrim.</ESCP_KingdomOfSkyrim_Enlist_Letter_Label>
+    <ESCP_KingdomOfSkyrim_Enlist_Button_Label>Swear to the High King</ESCP_KingdomOfSkyrim_Enlist_Button_Label>
+    <ESCP_KingdomOfSkyrim_Enlist_Button_Desc>Bend the knee in Solitude and take a place in the High King's service.</ESCP_KingdomOfSkyrim_Enlist_Button_Desc>
+    <ESCP_KingdomOfSkyrim_Enlist_Requrements_Not_Satisfied>The jarls do not know your name well enough yet. Standing: {0}.</ESCP_KingdomOfSkyrim_Enlist_Requrements_Not_Satisfied>
+    <ESCP_KingdomOfSkyrim_Enlisted_To_Hostile_Faction>Solitude will not take an oath from an enemy of the crown.</ESCP_KingdomOfSkyrim_Enlisted_To_Hostile_Faction>
+    <ESCP_KingdomOfSkyrim_Enlisted_With_Key>Sworn to the High King</ESCP_KingdomOfSkyrim_Enlisted_With_Key>
+    <ESCP_KingdomOfSkyrim_Missions_Label>The jarl's business</ESCP_KingdomOfSkyrim_Missions_Label>
+    <ESCP_KingdomOfSkyrim_Missions_Desc>See what the court needs handled.</ESCP_KingdomOfSkyrim_Missions_Desc>
+    <ESCP_KingdomOfSkyrim_Menu_Missions_Desc>Work posted by the jarl's steward. Payment is sent from the hold's treasury when it is done.</ESCP_KingdomOfSkyrim_Menu_Missions_Desc>
+    <ESCP_KingdomOfSkyrim_Menu_Missions_Select_Quest>Select a job</ESCP_KingdomOfSkyrim_Menu_Missions_Select_Quest>
+    <ESCP_KingdomOfSkyrim_Menu_Missions_Start_Quest>Accept</ESCP_KingdomOfSkyrim_Menu_Missions_Start_Quest>
+    <ESCP_KingdomOfSkyrim_Menu_Missions_Collect_Bounty>Collect</ESCP_KingdomOfSkyrim_Menu_Missions_Collect_Bounty>
+    <ESCP_KingdomOfSkyrim_Provisions_Label>Draw from the stores</ESCP_KingdomOfSkyrim_Provisions_Label>
+    <ESCP_KingdomOfSkyrim_Provisions_Desc>Salted meat, bread and mead from the longhouse.</ESCP_KingdomOfSkyrim_Provisions_Desc>
+    <ESCP_KingdomOfSkyrim_Storage_Label>Hold storehouse</ESCP_KingdomOfSkyrim_Storage_Label>
+    <ESCP_KingdomOfSkyrim_Storage_Desc>Leave goods with the steward and fetch them from any loyal hold.</ESCP_KingdomOfSkyrim_Storage_Desc>
+    <ESCP_KingdomOfSkyrim_Resign_Menu_Text>Break your oath to the High King? Nords do not forget an oathbreaker.</ESCP_KingdomOfSkyrim_Resign_Menu_Text>
+    <ESCP_KingdomOfSkyrim_Resign_Letter_Title>Oath to Solitude broken</ESCP_KingdomOfSkyrim_Resign_Letter_Title>
+    <ESCP_KingdomOfSkyrim_Resign_Letter_Label>The colony has gone back on its oath to the High King. The jarls have taken note.</ESCP_KingdomOfSkyrim_Resign_Letter_Label>
+    <ESCP_KingdomOfSkyrim_Resign_Button_Label>Break the oath</ESCP_KingdomOfSkyrim_Resign_Button_Label>
+    <ESCP_KingdomOfSkyrim_Resign_Button_Desc>Walk away from your sworn service to the crown.</ESCP_KingdomOfSkyrim_Resign_Button_Desc>
+    <ESCP_KingdomOfSkyrim_Kick_Out_Letter_Title>Cast out by the High King</ESCP_KingdomOfSkyrim_Kick_Out_Letter_Title>
+    <ESCP_KingdomOfSkyrim_Kick_Out_Label_Title>Solitude no longer counts the colony among its sworn. Do not expect a welcome in the loyal holds.</ESCP_KingdomOfSkyrim_Kick_Out_Label_Title>
+    <ESCP_KingdomOfSkyrim_Salary_Label>Collect your stipend</ESCP_KingdomOfSkyrim_Salary_Label>
+    <ESCP_KingdomOfSkyrim_Salary_Desc>A thane's share from the hold treasury.</ESCP_KingdomOfSkyrim_Salary_Desc>
+    <ESCP_KingdomOfSkyrim_Work_0_Label>Stand guard in the hold</ESCP_KingdomOfSkyrim_Work_0_Label>
+    <ESCP_KingdomOfSkyrim_Work_0_Desc>Walk the walls with the jarl's guard and keep the peace in town.</ESCP_KingdomOfSkyrim_Work_0_Desc>
+    <ESCP_KingdomOfSkyrim_Work_1_Label>Spar with the housecarls</ESCP_KingdomOfSkyrim_Work_1_Label>
+    <ESCP_KingdomOfSkyrim_Work_1_Desc>The jarl's housecarls are happy to knock some skill into anyone who asks.</ESCP_KingdomOfSkyrim_Work_1_Desc>
+
+</LanguageData>

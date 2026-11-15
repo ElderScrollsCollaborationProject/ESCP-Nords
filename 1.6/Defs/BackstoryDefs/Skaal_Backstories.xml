@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Skaal_Village_Child</defName>
+        <identifier>ESCP_Backstory_Skaal_Village_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Skaal village child</title>
+        <titleShort>Village child</titleShort>
+        <description>[PAWN_nameDef] grew up in the Skaal village. Same thirty-odd people, same palisade, same gray light off the ash waste every morning. Everything belonged to everyone: tools, food, decisions. [PAWN_pronoun] learned the All-Maker's stories in winter when there was nothing else to do and the dark lasted eighteen hours. By the time [PAWN_pronoun] was grown [PAWN_pronoun] knew them better than [PAWN_pronoun] knew [PAWN_possessive] own name.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Skaal_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Skaal_Hunter_Apprentice</defName>
+        <identifier>ESCP_Backstory_Skaal_Hunter_Apprentice</identifier>
+        <slot>Childhood</slot>
+        <title>hunter's apprentice</title>
+        <titleShort>Hunt apprentice</titleShort>
+        <description>The senior hunters took [PAWN_nameDef] out as soon as [PAWN_pronoun] could string a bow. Solstheim wasn't like hunting on the mainland. Rieklings, ash spawn, and weather that turned bad faster than [PAWN_pronoun] could make shelter. The hunters had one rule above everything else: say the words before you touch the kill. Thank the All-Maker. Every time, no exceptions. [PAWN_pronoun] never forgot it.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Skaal_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Animals>3</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Skaal_Shaman_Student</defName>
+        <identifier>ESCP_Backstory_Skaal_Shaman_Student</identifier>
+        <slot>Childhood</slot>
+        <title>shaman's student</title>
+        <titleShort>Shaman student</titleShort>
+        <description>The shaman watched [PAWN_nameDef] for two years before saying anything. Then one morning [PAWN_pronoun] showed up at [PAWN_possessive] door with questions, and kept coming back. Nothing was written down. Skaal knowledge passed mouth to mouth and lived in memory. By the time [PAWN_pronoun] was grown [PAWN_pronoun] knew the names of the All-Maker's gifts, the rites for each season's turning, and the signs that Herma-Mora was working on someone. The last part took the longest to learn.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Skaal_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Medicine>1</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Skaal_Hunter</defName>
+        <identifier>ESCP_Backstory_Skaal_Hunter</identifier>
+        <slot>Adulthood</slot>
+        <title>Skaal hunter</title>
+        <titleShort>Hunter</titleShort>
+        <description>[PAWN_nameDef] hunted for the village. Most weeks that meant a long walk into the interior, a kill, and a longer walk back carrying it. The bears in the eastern forest and the lurkers along the coast didn't care how experienced [PAWN_pronoun] was. [PAWN_pronoun] came back from every trip, sometimes with marks suggesting it had been close. The village ate. That was what mattered.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Skaal_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Animals>3</Animals>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Skaal_Guardian</defName>
+        <identifier>ESCP_Backstory_Skaal_Guardian</identifier>
+        <slot>Adulthood</slot>
+        <title>Skaal guardian</title>
+        <titleShort>Guardian</titleShort>
+        <description>[PAWN_nameDef] kept watch. Up on the palisade in the dark while everyone else slept, drills in the morning, repairs when the weather wouldn't allow anything else. Rieklings were the usual problem. Occasionally something worse. The Skaal had no soldiers, so it fell to whoever was most able, and [PAWN_pronoun] had been the most able for a long time. [PAWN_pronoun] didn't mind.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Skaal_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Skaal_Shaman</defName>
+        <identifier>ESCP_Backstory_Skaal_Shaman</identifier>
+        <slot>Adulthood</slot>
+        <title>Skaal shaman</title>
+        <titleShort>Shaman</titleShort>
+        <description>[PAWN_nameDef] was the village shaman. People brought [PAWN_pronoun] the sick, the disputes, and the nightmares, and [PAWN_pronoun] dealt with all three as best [PAWN_pronoun] could. The rites kept the All-Maker's gifts in balance. The healing kept people alive. The counselling kept people from killing each other over grazing rights. Everything the village knew lived in [PAWN_possessive] head. Nothing written down. [PAWN_pronoun] didn't complain about it.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Skaal_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>3</Intellectual>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Skaal_Elder</defName>
+        <identifier>ESCP_Backstory_Skaal_Elder</identifier>
+        <slot>Adulthood</slot>
+        <title>Skaal elder</title>
+        <titleShort>Elder</titleShort>
+        <description>[PAWN_nameDef] had been a hunter, then a guardian, then the person others brought problems to. There was no moment when that changed. People just started knocking, and [PAWN_pronoun] started answering. The elders' council had no charter; they just talked until something made sense. [PAWN_pronoun] had lived through enough bad decisions to recognize one early. That was the whole value of it.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Skaal_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+</Defs>

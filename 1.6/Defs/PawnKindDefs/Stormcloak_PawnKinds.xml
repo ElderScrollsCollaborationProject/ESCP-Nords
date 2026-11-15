@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase" Abstract="True" Name="ESCP_StormcloakkindBase">
+        <defaultFactionDef>ESCP_Faction_Stormcloaks</defaultFactionDef>
+        <initialWillRange>2~5</initialWillRange>
+        <initialResistanceRange>12~20</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                    <li>ESCP_Backstory_Stormcloak_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                    <li>ESCP_Backstory_Stormcloak_Military</li>
+                    <li>ESCP_Backstory_Stormcloak_Citizen</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_StormcloakkindBase">
+        <defName>ESCP_Pawnkind_Stormcloak_Citizen</defName>
+        <label>Stormcloak citizen</label>
+        <combatPower>35</combatPower>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>55</maxGenerationAge>
+        <isFighter>false</isFighter>
+        <trader>false</trader>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelColor>(0.15, 0.22, 0.55)</apparelColor>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_StormcloakkindBase">
+        <defName>ESCP_Pawnkind_Stormcloak_Soldier</defName>
+        <label>Stormcloak soldier</label>
+        <combatPower>85</combatPower>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>40</maxGenerationAge>
+        <weaponMoney>300~600</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelMoney>100~250</apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitaryBasic</li>
+        </apparelTags>
+        <apparelColor>(0.15, 0.22, 0.55)</apparelColor>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~8</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_StormcloakkindBase">
+        <defName>ESCP_Pawnkind_Stormcloak_Archer</defName>
+        <label>Stormcloak archer</label>
+        <combatPower>80</combatPower>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>38</maxGenerationAge>
+        <weaponMoney>300~600</weaponMoney>
+        <weaponTags>
+            <li>Ranged</li>
+            <li>MedievalRanged</li>
+        </weaponTags>
+        <apparelMoney>80~200</apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitaryBasic</li>
+        </apparelTags>
+        <apparelColor>(0.15, 0.22, 0.55)</apparelColor>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~9</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_StormcloakkindBase">
+        <defName>ESCP_Pawnkind_Stormcloak_Berserker</defName>
+        <label>Stormcloak berserker</label>
+        <combatPower>130</combatPower>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>35</maxGenerationAge>
+        <weaponMoney>400~800</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelMoney>150~300</apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitaryBasic</li>
+        </apparelTags>
+        <apparelColor>(0.12, 0.15, 0.45)</apparelColor>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~12</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <Brawler>0</Brawler>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_StormcloakkindBase">
+        <defName>ESCP_Pawnkind_Stormcloak_Officer</defName>
+        <label>Stormcloak officer</label>
+        <combatPower>150</combatPower>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+        <weaponMoney>600~1000</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelMoney>300~600</apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelColor>(0.10, 0.18, 0.48)</apparelColor>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~12</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>4~8</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_StormcloakkindBase">
+        <defName>ESCP_Pawnkind_Stormcloak_Commander</defName>
+        <label>Stormcloak commander</label>
+        <combatPower>250</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>55</maxGenerationAge>
+        <weaponMoney>900~1500</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelMoney>600~1200</apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelColor>(0.08, 0.14, 0.40)</apparelColor>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~16</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>5~10</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </PawnKindDef>
+
+</Defs>

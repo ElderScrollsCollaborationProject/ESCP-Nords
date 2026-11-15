@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Stormcloaks_Enlist_Letter_Title>Joined the Stormcloaks</ESCP_Stormcloaks_Enlist_Letter_Title>
+    <ESCP_Stormcloaks_Enlist_Letter_Label>The colony now fights for Ulfric Stormcloak. The rebel camps will share what they have with anyone wearing the blue.</ESCP_Stormcloaks_Enlist_Letter_Label>
+    <ESCP_Stormcloaks_Enlist_Button_Label>Take up the blue</ESCP_Stormcloaks_Enlist_Button_Label>
+    <ESCP_Stormcloaks_Enlist_Button_Desc>Join Ulfric's rebellion and fight to free Skyrim from the Empire and the Thalmor.</ESCP_Stormcloaks_Enlist_Button_Desc>
+    <ESCP_Stormcloaks_Enlist_Requrements_Not_Satisfied>The Stormcloaks don't trust you yet. Standing: {0}.</ESCP_Stormcloaks_Enlist_Requrements_Not_Satisfied>
+    <ESCP_Stormcloaks_Enlisted_To_Hostile_Faction>Ulfric's men will not have someone who stands against them.</ESCP_Stormcloaks_Enlisted_To_Hostile_Faction>
+    <ESCP_Stormcloaks_Enlisted_With_Key>Wears the Stormcloak blue</ESCP_Stormcloaks_Enlisted_With_Key>
+    <ESCP_Stormcloaks_Missions_Label>Rebel work</ESCP_Stormcloaks_Missions_Label>
+    <ESCP_Stormcloaks_Missions_Desc>See what the war council wants done.</ESCP_Stormcloaks_Missions_Desc>
+    <ESCP_Stormcloaks_Menu_Missions_Desc>Tasks handed down from Windhelm. Ulfric pays his fighters when the job is done.</ESCP_Stormcloaks_Menu_Missions_Desc>
+    <ESCP_Stormcloaks_Menu_Missions_Select_Quest>Select a job</ESCP_Stormcloaks_Menu_Missions_Select_Quest>
+    <ESCP_Stormcloaks_Menu_Missions_Start_Quest>Accept</ESCP_Stormcloaks_Menu_Missions_Start_Quest>
+    <ESCP_Stormcloaks_Menu_Missions_Collect_Bounty>Collect</ESCP_Stormcloaks_Menu_Missions_Collect_Bounty>
+    <ESCP_Stormcloaks_Provisions_Label>Draw camp supplies</ESCP_Stormcloaks_Provisions_Label>
+    <ESCP_Stormcloaks_Provisions_Desc>Whatever the quartermaster can spare: dried meat and a little mead.</ESCP_Stormcloaks_Provisions_Desc>
+    <ESCP_Stormcloaks_Storage_Label>Camp stash</ESCP_Stormcloaks_Storage_Label>
+    <ESCP_Stormcloaks_Storage_Desc>Leave goods with the rebels and pick them up at any Stormcloak hold.</ESCP_Stormcloaks_Storage_Desc>
+    <ESCP_Stormcloaks_Resign_Menu_Text>Desert the Stormcloaks? Ulfric's men have little love for turncoats.</ESCP_Stormcloaks_Resign_Menu_Text>
+    <ESCP_Stormcloaks_Resign_Letter_Title>Left the rebellion</ESCP_Stormcloaks_Resign_Letter_Title>
+    <ESCP_Stormcloaks_Resign_Letter_Label>The colony has thrown off the blue. The Stormcloaks will call it cowardice.</ESCP_Stormcloaks_Resign_Letter_Label>
+    <ESCP_Stormcloaks_Resign_Button_Label>Desert the rebellion</ESCP_Stormcloaks_Resign_Button_Label>
+    <ESCP_Stormcloaks_Resign_Button_Desc>Lay down the blue and walk away from Ulfric's war.</ESCP_Stormcloaks_Resign_Button_Desc>
+    <ESCP_Stormcloaks_Kick_Out_Letter_Title>Thrown out by the Stormcloaks</ESCP_Stormcloaks_Kick_Out_Letter_Title>
+    <ESCP_Stormcloaks_Kick_Out_Label_Title>Windhelm has decided the colony is no friend of Skyrim. The rebels want nothing more to do with you.</ESCP_Stormcloaks_Kick_Out_Label_Title>
+    <ESCP_Stormcloaks_Salary_Label>Collect your share</ESCP_Stormcloaks_Salary_Label>
+    <ESCP_Stormcloaks_Salary_Desc>Septims from Windhelm's war chest, when there are any.</ESCP_Stormcloaks_Salary_Desc>
+    <ESCP_Stormcloaks_Work_0_Label>Raid Imperial supply lines</ESCP_Stormcloaks_Work_0_Label>
+    <ESCP_Stormcloaks_Work_0_Desc>Ambush wagons on the roads and bring back whatever they carry.</ESCP_Stormcloaks_Work_0_Desc>
+    <ESCP_Stormcloaks_Work_1_Label>Train in the war camp</ESCP_Stormcloaks_Work_1_Label>
+    <ESCP_Stormcloaks_Work_1_Desc>Old soldiers teach axe work and how to hold a line in the snow.</ESCP_Stormcloaks_Work_1_Desc>
+
+</LanguageData>

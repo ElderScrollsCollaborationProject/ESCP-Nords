@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_Court_Child</defName>
+        <identifier>ESCP_Backstory_Kingdom_Court_Child</identifier>
+        <slot>Childhood</slot>
+        <title>hold court child</title>
+        <titleShort>Court child</titleShort>
+        <description>[PAWN_nameDef] grew up in a jarl's hall. Not as a child of the jarl, close enough to watch, far enough to be ignored. The hall ran on precedence; even where people sat said something about who owed what to whom. [PAWN_pronoun] picked it up the way kids do, without being taught. By twelve [PAWN_pronoun] knew every thane in the hold by name and could spot a lie from across the room.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_Freeholder_Child</defName>
+        <identifier>ESCP_Backstory_Kingdom_Freeholder_Child</identifier>
+        <slot>Childhood</slot>
+        <title>freeholder's child</title>
+        <titleShort>Freeholder child</titleShort>
+        <description>[PAWN_nameDef]'s family owned their land, and [PAWN_pronoun] heard about it constantly growing up. The farm ran on its own rhythms: planting, harvest, the long work before the first snow. Neighbors turned up to help because one day you'd need them back. There was no contract. That was the point.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>3</Plants>
+            <Animals>2</Animals>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_High_Liegeman</defName>
+        <identifier>ESCP_Backstory_Kingdom_High_Liegeman</identifier>
+        <slot>Adulthood</slot>
+        <title>High King's liegeman</title>
+        <titleShort>High liegeman</titleShort>
+        <description>[PAWN_nameDef] swore to the High King's household and spent years standing behind the throne rather than in front of anything interesting. Escort duty, formal appearances, the occasional border skirmish that the official record called a patrol action. [PAWN_pronoun] learned that representing the crown meant keeping [PAWN_possessive] opinions off [PAWN_possessive] face.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Military</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_Huscarl_Captain</defName>
+        <identifier>ESCP_Backstory_Kingdom_Huscarl_Captain</identifier>
+        <slot>Adulthood</slot>
+        <title>huscarl captain</title>
+        <titleShort>Huscarl captain</titleShort>
+        <description>[PAWN_nameDef] earned the huscarl captaincy the old way, by being the last one standing after the fight nobody else wanted to take. The jarl gave [PAWN_pronoun] the house guard after that. The job was mostly drills, roster checks, and stopping arguments before they became incidents. [PAWN_pronoun] was the first body between [PAWN_possessive] jarl and anything that came through the door, and [PAWN_pronoun] took that seriously.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Military</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>5</Melee>
+            <Social>1</Social>
+        </skillGains>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_Steward</defName>
+        <identifier>ESCP_Backstory_Kingdom_Steward</identifier>
+        <slot>Adulthood</slot>
+        <title>hold steward</title>
+        <titleShort>Steward</titleShort>
+        <description>[PAWN_nameDef] ran the books for a hold jarl. Taxes, grain stores, the endless arguments about who owned which pasture. Half the job was catching small problems before they needed soldiers. [PAWN_pronoun] got fast at reading people and saying enough without saying too much. Nobody made songs about stewards. That suited [PAWN_pronoun] fine.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Citizen</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_Skald</defName>
+        <identifier>ESCP_Backstory_Kingdom_Skald</identifier>
+        <slot>Adulthood</slot>
+        <title>hold skald</title>
+        <titleShort>Skald</titleShort>
+        <description>[PAWN_nameDef] was a skald, the good kind. [PAWN_pronoun] could take a battle nobody wanted to remember and shape it into something that made men glad to have been there. [PAWN_pronoun] knew every family line in the hold three generations back, and knew which parts to leave out when reciting them in front of the people involved. Jarls paid well for that. [PAWN_pronoun] was careful never to be cheap with it.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Citizen</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_Thane</defName>
+        <identifier>ESCP_Backstory_Kingdom_Thane</identifier>
+        <slot>Adulthood</slot>
+        <title>thane of the hold</title>
+        <titleShort>Thane</titleShort>
+        <description>The jarl gave [PAWN_nameDef] the thane title after [PAWN_pronoun] sorted out a land dispute that had been festering for six years. [PAWN_pronoun] hadn't asked for it. The title meant land, owed service, and showing up when the muster went out. [PAWN_pronoun] managed the estate, sat the jarl's council when called, and tried to spend less time in the great hall than [PAWN_possessive] position technically required.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Noble</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Melee>2</Melee>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Kingdom_Noble_Heir</defName>
+        <identifier>ESCP_Backstory_Kingdom_Noble_Heir</identifier>
+        <slot>Adulthood</slot>
+        <title>hold heir</title>
+        <titleShort>Hold heir</titleShort>
+        <description>[PAWN_nameDef] was going to inherit. Everyone knew it and treated [PAWN_pronoun] accordingly: tutors, training yards, an endless run of formal dinners where [PAWN_pronoun] was expected to smile and remember names. [PAWN_pronoun] learned law, swordcraft, and how to keep a straight face when the old thanes said something stupid. By twenty [PAWN_pronoun] had sat through more six-hour feasts than most people manage in a lifetime.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Kingdom_Noble</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Social>3</Social>
+            <Melee>1</Melee>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+</Defs>

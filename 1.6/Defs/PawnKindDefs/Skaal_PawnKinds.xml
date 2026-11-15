@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="ESCP_NordkindBase" Abstract="True" Name="ESCP_SkaalkindBase">
+        <defaultFactionDef>ESCP_Faction_Skaal</defaultFactionDef>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>10~16</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Skaal_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Skaal_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SkaalkindBase">
+        <defName>ESCP_Pawnkind_Skaal_Villager</defName>
+        <label>Skaal villager</label>
+        <combatPower>30</combatPower>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>60</maxGenerationAge>
+        <isFighter>false</isFighter>
+        <trader>false</trader>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelColor>(0.2, 0.45, 0.25)</apparelColor>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SkaalkindBase">
+        <defName>ESCP_Pawnkind_Skaal_Hunter</defName>
+        <label>Skaal hunter</label>
+        <combatPower>75</combatPower>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>45</maxGenerationAge>
+        <weaponMoney>200~500</weaponMoney>
+        <weaponTags>
+            <li>Ranged</li>
+            <li>MedievalRanged</li>
+        </weaponTags>
+        <apparelMoney>100~250</apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitaryBasic</li>
+        </apparelTags>
+        <apparelColor>(0.2, 0.45, 0.25)</apparelColor>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~10</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>3~8</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SkaalkindBase">
+        <defName>ESCP_Pawnkind_Skaal_Shield_Warrior</defName>
+        <label>Skaal shield warrior</label>
+        <combatPower>100</combatPower>
+        <minGenerationAge>20</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+        <weaponMoney>300~700</weaponMoney>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelMoney>200~500</apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitaryBasic</li>
+        </apparelTags>
+        <apparelColor>(0.18, 0.38, 0.22)</apparelColor>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>5~10</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SkaalkindBase">
+        <defName>ESCP_Pawnkind_Skaal_Shaman</defName>
+        <label>Skaal shaman</label>
+        <combatPower>60</combatPower>
+        <minGenerationAge>35</minGenerationAge>
+        <maxGenerationAge>70</maxGenerationAge>
+        <isFighter>false</isFighter>
+        <apparelMoney>150~400</apparelMoney>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelColor>(0.25, 0.50, 0.28)</apparelColor>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>4~10</range>
+            </li>
+            <li>
+                <skill>Medicine</skill>
+                <range>4~9</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="ESCP.Core.Magic.PawnKindExtension_Spellcaster">
+                <spells>
+                    <li>ESCP_Spell_IceSpike</li>
+                    <li>ESCP_Spell_Healing</li>
+                </spells>
+                <randomSpells>
+                    <li>ESCP_Spell_Oakflesh</li>
+                </randomSpells>
+                <randomCount>1~1</randomCount>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+
+</Defs>

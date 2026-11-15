@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Town_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Town_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Hold town child</title>
+        <titleShort>Town child</titleShort>
+        <description>[PAWN_nameDef] grew up in one of Skyrim's fortified hold towns, perhaps the cold harbor of Windhelm, the plains city of Whiterun, or the fog-wrapped streets of Morthal. [PAWN_pronoun] learned from birth that the hold walls were the line between order and the wilderness beyond, and took that lesson to heart.</description>
+        <skillGains>
+            <Social>2</Social>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Hunters_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Hunters_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Hunter's child</title>
+        <titleShort>Hunter's child</titleShort>
+        <description>[PAWN_nameDef] was raised in the wild reaches beyond the hold walls, following a parent through pine forests and across frozen tundra. [PAWN_pronoun] learned to track elk and saber cat before [PAWN_pronoun] could read, and could read the land like a written page.</description>
+        <skillGains>
+            <Shooting>2</Shooting>
+            <Animals>3</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Warriors_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Warriors_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Warrior's child</title>
+        <titleShort>Warrior's child</titleShort>
+        <description>[PAWN_nameDef] was born into a warrior family in one of Skyrim's holds. [PAWN_pronoun] grew up hearing stories of battle glory and Sovngarde, and trained with shield and axe long before [PAWN_pronoun] was old enough to carry them properly.</description>
+        <skillGains>
+            <Melee>2</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Skald_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Skald_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Skald's apprentice</title>
+        <titleShort>Skald's apprentice</titleShort>
+        <description>[PAWN_nameDef] was taken in by an old skald and raised on the sagas of dead heroes, the tale of Ysgramor, the five hundred companions, and all the great deeds that earned a seat in Sovngarde. [PAWN_pronoun] memorized entire epics before [PAWN_pronoun] understood what they meant.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Artistic>2</Artistic>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Farm_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Farm_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Tundra farm child</title>
+        <titleShort>Farm child</titleShort>
+        <description>[PAWN_nameDef] grew up on a tundra farmstead, working soil that froze solid in First Frost and turned to mud come Last Seed. Life was hard, rewards were modest, and the work never stopped, but [PAWN_pronoun] came away from it knowing how things grow and how to make use of everything the land offered.</description>
+        <skillGains>
+            <Plants>3</Plants>
+            <Animals>2</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Mine_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Mine_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Mine child</title>
+        <titleShort>Mine child</titleShort>
+        <description>[PAWN_nameDef] was born near one of Skyrim's great iron or silver mines and spent [PAWN_possessive] childhood hauling ore, tending smelteries, and learning how the rock speaks if you know how to listen. [PAWN_pronoun] could swing a pick by age eight.</description>
+        <skillGains>
+            <Mining>3</Mining>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Snowbound_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Snowbound_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Snowbound child</title>
+        <titleShort>Snowbound child</titleShort>
+        <description>[PAWN_nameDef] was raised near the frozen peaks of the far north, the Pale or the holds near Winterhold, where the cold is a living thing and the magic comes easier than the harvest. [PAWN_pronoun] learned to survive on almost nothing and trust very few.</description>
+        <skillGains>
+            <Plants>3</Plants>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Hall_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Hall_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Mead hall child</title>
+        <titleShort>Hall child</titleShort>
+        <description>[PAWN_nameDef] was fostered in a jarl's mead hall as part of a political arrangement between holds. [PAWN_pronoun] grew up watching thanes dispute, skalds perform, and warriors drink away their sorrows, and learned early how to read a room and keep [PAWN_possessive] mouth shut at the right moments.</description>
+        <skillGains>
+            <Social>2</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+            <li>ESCP_Backstory_Nord_Noble_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Caravan_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Caravan_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Caravan child</title>
+        <titleShort>Caravan child</titleShort>
+        <description>[PAWN_nameDef] was born to a family of traveling merchants working the roads between Skyrim's holds. Every gate was a temporary home and every road a new risk. [PAWN_pronoun] knew the caravan routes by heart and could spot a bandit ambush by the way the trees went quiet.</description>
+        <skillGains>
+            <Social>2</Social>
+            <Animals>2</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Smith_Child</defName>
+        <identifier>ESCP_Backstory_Nord_Smith_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Smith's child</title>
+        <titleShort>Smith's child</titleShort>
+        <description>[PAWN_nameDef] grew up in the forge-glow, watching a parent shape iron into blades and armor fit for huscarls. [PAWN_pronoun] learned to judge heat by color and metal by sound, and could tell a well-balanced sword from a poor one by the time most children were playing at sticks.</description>
+        <skillGains>
+            <Crafting>3</Crafting>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Child</li>
+        </spawnCategories>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Warrior</defName>
+        <identifier>ESCP_Backstory_Nord_Warrior</identifier>
+        <slot>Adulthood</slot>
+        <title>Hold warrior</title>
+        <titleShort>Warrior</titleShort>
+        <description>[PAWN_nameDef] served as a frontline warrior in one of Skyrim's holds, fighting bandits at the mountain passes, giants on the tundra, and, when two holds disagreed about a border, other Nords. [PAWN_pronoun] survived long enough to know which fights to start and which to finish fast.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Military</li>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Huscarl</defName>
+        <identifier>ESCP_Backstory_Nord_Huscarl</identifier>
+        <slot>Adulthood</slot>
+        <title>Huscarl</title>
+        <titleShort>Huscarl</titleShort>
+        <description>[PAWN_nameDef] was personally sworn into the service of a jarl as a huscarl, the hold's elite bodyguard. [PAWN_pronoun] stood at the jarl's shoulder in audience and at the front of every sortie in the field. The oath was for life, and [PAWN_pronoun] took it seriously.</description>
+        <skillGains>
+            <Melee>5</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Military</li>
+            <li>ESCP_Backstory_Nord_Huscarl</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Skald</defName>
+        <identifier>ESCP_Backstory_Nord_Skald</identifier>
+        <slot>Adulthood</slot>
+        <title>Skald</title>
+        <titleShort>Skald</titleShort>
+        <description>[PAWN_nameDef] earned a reputation as one of the hold's finest skalds, a keeper of the old songs, the sagas, and the histories that matter more than written records. [PAWN_pronoun] had performed at every major jarl's feast hall within two holds' riding distance and could silence a rowdy mead hall with a single verse.</description>
+        <skillGains>
+            <Social>5</Social>
+            <Artistic>3</Artistic>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Skald</li>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+        </spawnCategories>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Guard</defName>
+        <identifier>ESCP_Backstory_Nord_Guard</identifier>
+        <slot>Adulthood</slot>
+        <title>Hold guard</title>
+        <titleShort>Hold guard</titleShort>
+        <description>[PAWN_nameDef] spent years on gate duty and patrol rotations in a hold town, enough to know every face in the district and every trick the less reputable ones tried to use. [PAWN_pronoun] knows what a real threat looks like and how to put one down before it becomes a problem.</description>
+        <skillGains>
+            <Melee>3</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Military</li>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Fat</bodyTypeGlobal>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Farmer</defName>
+        <identifier>ESCP_Backstory_Nord_Farmer</identifier>
+        <slot>Adulthood</slot>
+        <title>Hold farmer</title>
+        <titleShort>Farmer</titleShort>
+        <description>[PAWN_nameDef] ran a farmstead on the tundra, fighting the seasons as hard as any warrior fights an enemy. [PAWN_pronoun] learned to read weather, coax crops, and manage livestock in conditions that would drive a soft southerner to madness.</description>
+        <skillGains>
+            <Plants>4</Plants>
+            <Animals>3</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Fat</bodyTypeGlobal>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Hunter</defName>
+        <identifier>ESCP_Backstory_Nord_Hunter</identifier>
+        <slot>Adulthood</slot>
+        <title>Hold hunter</title>
+        <titleShort>Hunter</titleShort>
+        <description>[PAWN_nameDef] made a life in Skyrim's wilderness, trading pelts and meat in the hold towns but spending most of [PAWN_possessive] years alone in the snowfields and pine forests. [PAWN_pronoun] knows how to wait, how to move without being heard, and how to make one arrow count.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Animals>3</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+            <li>ESCP_Backstory_Nord_Military</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Blacksmith</defName>
+        <identifier>ESCP_Backstory_Nord_Blacksmith</identifier>
+        <slot>Adulthood</slot>
+        <title>Hold blacksmith</title>
+        <titleShort>Blacksmith</titleShort>
+        <description>[PAWN_nameDef] ran a forge in a hold town, supplying the guard and the garrison with everything from horseshoes to full plate. [PAWN_pronoun] prided [PAWN_possessive] work on its durability: armor from this forge held together when a lesser piece would split, and a blade from this forge kept its edge.</description>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Merchant</defName>
+        <identifier>ESCP_Backstory_Nord_Merchant</identifier>
+        <slot>Adulthood</slot>
+        <title>Hold merchant</title>
+        <titleShort>Merchant</titleShort>
+        <description>[PAWN_nameDef] ran a trade shop in one of Skyrim's hold towns, buying ore and pelts from miners and hunters, and selling tools, weapons, and supplies back at a profit. [PAWN_pronoun] knew every trader's trick and had working relationships with merchants across the province.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+            <li>ESCP_Backstory_Nord_Merchant</li>
+        </spawnCategories>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Thane_Retainer</defName>
+        <identifier>ESCP_Backstory_Nord_Thane_Retainer</identifier>
+        <slot>Adulthood</slot>
+        <title>Thane's retainer</title>
+        <titleShort>Retainer</titleShort>
+        <description>[PAWN_nameDef] served as a personal retainer to a thane, handling the thane's household affairs, accompanying [PAWN_objective] on the road, and acting as [PAWN_possessive] representative in disputes too minor for a huscarl's sword but too sensitive for common handling.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+            <li>ESCP_Backstory_Nord_Thane</li>
+        </spawnCategories>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Berserker</defName>
+        <identifier>ESCP_Backstory_Nord_Berserker</identifier>
+        <slot>Adulthood</slot>
+        <title>Nord berserker</title>
+        <titleShort>Berserker</titleShort>
+        <description>[PAWN_nameDef] has a reputation across three holds as someone you want on your side and pray you never anger. In battle, [PAWN_pronoun] channels a fury that other Nords call the old blood, something that makes [PAWN_objective] harder to hurt, harder to stop, and terrifying to face across an open field.</description>
+        <skillGains>
+            <Melee>5</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Military</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Jarl_Advisor</defName>
+        <identifier>ESCP_Backstory_Nord_Jarl_Advisor</identifier>
+        <slot>Adulthood</slot>
+        <title>Jarl's steward</title>
+        <titleShort>Steward</titleShort>
+        <description>[PAWN_nameDef] served as a hold steward, the jarl's chief administrative officer. [PAWN_pronoun] managed the hold's resources, mediated disputes between thanes, and made sure the hold's affairs ran smoothly enough that the jarl could focus on holding the walls and winning wars.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Thane</li>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+        </spawnCategories>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        <possessions />
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Nord_Miner</defName>
+        <identifier>ESCP_Backstory_Nord_Miner</identifier>
+        <slot>Adulthood</slot>
+        <title>Hold miner</title>
+        <titleShort>Miner</titleShort>
+        <description>[PAWN_nameDef] worked the iron and silver mines of Skyrim's holds for years, sinking shafts into frozen hillsides and hauling ore by torchlight. [PAWN_pronoun] has no patience for complicated plans but an unmatched understanding of how the rock underneath a mountain actually works.</description>
+        <skillGains>
+            <Mining>5</Mining>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>ESCP_Backstory_Nord_Citizen</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+</Defs>

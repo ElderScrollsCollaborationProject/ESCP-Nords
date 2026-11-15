@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_WesternSkyrim_Enlist_Letter_Title>Sworn to Western Skyrim</ESCP_WesternSkyrim_Enlist_Letter_Title>
+    <ESCP_WesternSkyrim_Enlist_Letter_Label>The colony has sworn itself to Solitude and the western holds. Svargrim's stewards will pay and feed those in his service.</ESCP_WesternSkyrim_Enlist_Letter_Label>
+    <ESCP_WesternSkyrim_Enlist_Button_Label>Swear to Svargrim</ESCP_WesternSkyrim_Enlist_Button_Label>
+    <ESCP_WesternSkyrim_Enlist_Button_Desc>Take service with the High King in Solitude, who wants no part of the Alliance War.</ESCP_WesternSkyrim_Enlist_Button_Desc>
+    <ESCP_WesternSkyrim_Enlist_Requrements_Not_Satisfied>Solitude has not heard enough good of you yet. Standing: {0}.</ESCP_WesternSkyrim_Enlist_Requrements_Not_Satisfied>
+    <ESCP_WesternSkyrim_Enlisted_To_Hostile_Faction>The west will not take an oath from its enemy.</ESCP_WesternSkyrim_Enlisted_To_Hostile_Faction>
+    <ESCP_WesternSkyrim_Enlisted_With_Key>Sworn to Western Skyrim</ESCP_WesternSkyrim_Enlisted_With_Key>
+    <ESCP_WesternSkyrim_Missions_Label>The court's business</ESCP_WesternSkyrim_Missions_Label>
+    <ESCP_WesternSkyrim_Missions_Desc>See what Solitude needs handled.</ESCP_WesternSkyrim_Missions_Desc>
+    <ESCP_WesternSkyrim_Menu_Missions_Desc>Work posted by the High King's court. Payment comes from the harbor tolls once it is done.</ESCP_WesternSkyrim_Menu_Missions_Desc>
+    <ESCP_WesternSkyrim_Menu_Missions_Select_Quest>Select a job</ESCP_WesternSkyrim_Menu_Missions_Select_Quest>
+    <ESCP_WesternSkyrim_Menu_Missions_Start_Quest>Accept</ESCP_WesternSkyrim_Menu_Missions_Start_Quest>
+    <ESCP_WesternSkyrim_Menu_Missions_Collect_Bounty>Collect</ESCP_WesternSkyrim_Menu_Missions_Collect_Bounty>
+    <ESCP_WesternSkyrim_Provisions_Label>Draw from the stores</ESCP_WesternSkyrim_Provisions_Label>
+    <ESCP_WesternSkyrim_Provisions_Desc>Salted fish, bread and mead from the court kitchens.</ESCP_WesternSkyrim_Provisions_Desc>
+    <ESCP_WesternSkyrim_Storage_Label>Harbor warehouse</ESCP_WesternSkyrim_Storage_Label>
+    <ESCP_WesternSkyrim_Storage_Desc>Leave goods with the harbor master in any western hold.</ESCP_WesternSkyrim_Storage_Desc>
+    <ESCP_WesternSkyrim_Resign_Menu_Text>Break your oath to Solitude? The western jarls will hold it against you.</ESCP_WesternSkyrim_Resign_Menu_Text>
+    <ESCP_WesternSkyrim_Resign_Letter_Title>Oath to Solitude broken</ESCP_WesternSkyrim_Resign_Letter_Title>
+    <ESCP_WesternSkyrim_Resign_Letter_Label>The colony has gone back on its oath to Western Skyrim.</ESCP_WesternSkyrim_Resign_Letter_Label>
+    <ESCP_WesternSkyrim_Resign_Button_Label>Break the oath</ESCP_WesternSkyrim_Resign_Button_Label>
+    <ESCP_WesternSkyrim_Resign_Button_Desc>Walk away from your service to the western holds.</ESCP_WesternSkyrim_Resign_Button_Desc>
+    <ESCP_WesternSkyrim_Kick_Out_Letter_Title>Cast out by Solitude</ESCP_WesternSkyrim_Kick_Out_Letter_Title>
+    <ESCP_WesternSkyrim_Kick_Out_Label_Title>Solitude no longer counts the colony among its sworn.</ESCP_WesternSkyrim_Kick_Out_Label_Title>
+    <ESCP_WesternSkyrim_Salary_Label>Collect your stipend</ESCP_WesternSkyrim_Salary_Label>
+    <ESCP_WesternSkyrim_Salary_Desc>Coin from Solitude's harbor tolls.</ESCP_WesternSkyrim_Salary_Desc>
+    <ESCP_WesternSkyrim_Work_0_Label>Guard the harbor</ESCP_WesternSkyrim_Work_0_Label>
+    <ESCP_WesternSkyrim_Work_0_Desc>Watch the docks at Solitude and keep the smugglers honest.</ESCP_WesternSkyrim_Work_0_Desc>
+    <ESCP_WesternSkyrim_Work_1_Label>Spar with the housecarls</ESCP_WesternSkyrim_Work_1_Label>
+    <ESCP_WesternSkyrim_Work_1_Desc>Western housecarls fight the old way and expect you to keep up.</ESCP_WesternSkyrim_Work_1_Desc>
+
+</LanguageData>

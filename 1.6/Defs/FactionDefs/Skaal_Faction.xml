@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>ESCP_Faction_Skaal</defName>
+        <label>Skaal Village</label>
+        <description>The Skaal are an ancient and deeply isolated community of Nords who have lived on the island of Solstheim since before recorded memory. Their entire culture is built around the All-Maker, their singular deity who they believe created all things and to whom all things will return. The Skaal take only what they need, share everything within their community, and understand their role in the world as guardians of the balance between creation and destruction. They are not conquerors or traders; they are watchers. Their village is small, their numbers few, and their presence in the wider world almost invisible, but their spiritual knowledge runs deeper than that of any Imperial priests, and the Dragonborn legends that outsiders find fantastical are to them simple historical fact.</description>
+        <colorSpectrum>
+            <li>(0.2, 0.45, 0.25)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <pawnSingular>Skaal</pawnSingular>
+        <pawnsPlural>Skaal</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.05</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canSiege>false</canSiege>
+        <canStageAttacks>false</canStageAttacks>
+        <leaderTitle>Village Chief</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+        <techLevel>Medieval</techLevel>
+        <fixedName>Skaal Village</fixedName>
+        <allowedCultures>
+            <li>ESCP_Culture_Skaal</li>
+        </allowedCultures>
+
+        <royalTitleTags>
+            <li>ESCP_Title_Skaal</li>
+        </royalTitleTags>
+        <royalFavorLabel>All-Maker's Trust</royalFavorLabel>
+        <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>The All-Maker's Path</ideoName>
+        <ideoDescription>The Skaal do not build churches and they do not write theology. The All-Maker's teaching is lived, not argued: take only what you need; give what you have; protect what was entrusted to you; do not let the shadow between creation and destruction grow. Their history is full of events that other scholars would call miraculous, the All-Maker's gifts unlocked by ritual, the return of stolen power through communal rite, the defeat of the Adversary who sought to unravel the fabric of creation. These are not myths to the Skaal. They are things that happened, things that could happen again, and things that will not happen to those who forget the path.</ideoDescription>
+        <deityPresets>
+            <li>
+                <nameType><name>the All-Maker</name><type>eternal creator of all living things and guardian of the cycle of existence</type></nameType>
+                <gender>None</gender>
+                <iconPath>UI/Deities/DeityGeneric</iconPath>
+            </li>
+        </deityPresets>
+        <styles>
+            <li>ESCP_Style_Skaal</li>
+        </styles>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ESCP_Meme_AllMaker</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Skaal_Child</li>
+                    <li>ESCP_Backstory_Skaal_Adult</li>
+                </categories>
+                <commonality>0.95</commonality>
+            </li>
+        </backstoryFilters>
+
+        <allowedArrivalTemperatureRange>-60~40</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 30)</li>
+                <li>(70, 45)</li>
+                <li>(700, 80)</li>
+                <li>(1300, 120)</li>
+                <li>(100000, 8000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Skaal_Hunter>10</ESCP_Pawnkind_Skaal_Hunter>
+                    <ESCP_Pawnkind_Skaal_Shield_Warrior>8</ESCP_Pawnkind_Skaal_Shield_Warrior>
+                    <ESCP_Pawnkind_Skaal_Shaman>2</ESCP_Pawnkind_Skaal_Shaman>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Skaal_Villager>20</ESCP_Pawnkind_Skaal_Villager>
+                    <ESCP_Pawnkind_Skaal_Shaman>5</ESCP_Pawnkind_Skaal_Shaman>
+                    <ESCP_Pawnkind_Skaal_Hunter>5</ESCP_Pawnkind_Skaal_Hunter>
+                </options>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Skaal_Villager>8</ESCP_Pawnkind_Skaal_Villager>
+                    <ESCP_Pawnkind_Skaal_Hunter>10</ESCP_Pawnkind_Skaal_Hunter>
+                    <ESCP_Pawnkind_Skaal_Shield_Warrior>10</ESCP_Pawnkind_Skaal_Shield_Warrior>
+                    <ESCP_Pawnkind_Skaal_Shaman>3</ESCP_Pawnkind_Skaal_Shaman>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+
+        <modExtensions Inherit="False">
+            <li Class="ESCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Skaal</newLabel>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

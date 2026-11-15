@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XenotypeDef>
+        <defName>ESCP_Xenotype_Nord</defName>
+        <label>Nord</label>
+        <iconPath>UI/Icons/Xenotypes/Hussar</iconPath>
+        <description>The hardy people of Skyrim's frozen holds: descendants of the Atmorans who crossed the sea and carved a homeland from ice, giants, and dragon fire. Nords are physically formidable, enduring hardships that would break other races, and fierce in battle beyond what their size alone explains. Their ancient blood carries the fury of old wars and the stubbornness of a people who refused to yield to anything the world threw at them.</description>
+        <descriptionShort>Hardy warriors of Skyrim's frozen holds: enduring, fierce, and built for battle and bitter cold.</descriptionShort>
+        <inheritable>true</inheritable>
+        <genes>
+            <li>ESCP_Gene_Nord_Constitution</li>
+            <li>ESCP_Gene_Nord_Battle_Fury</li>
+            <li>ESCP_Gene_Nord_Stature</li>
+            <li>Skin_Melanin2</li>
+            <li>Skin_Melanin3</li>
+            <li>Skin_Melanin4</li>
+        </genes>
+    </XenotypeDef>
+
+</Defs>

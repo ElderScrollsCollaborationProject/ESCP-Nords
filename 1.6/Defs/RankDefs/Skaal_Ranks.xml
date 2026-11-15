@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ESCP.Ranks.RankTrackDef>
+        <defName>ESCP_RankTrack_Skaal</defName>
+        <label>the Skaal ranks</label>
+        <rootTier>ESCP_Rank_Skaal_Outlander</rootTier>
+        <owningFaction>ESCP_Faction_Skaal</owningFaction>
+        <collectiveNoun>the Skaal</collectiveNoun>
+        <drillLabel>Hunting Practice</drillLabel>
+        <drillDesc>Train with any colonist. Both stop what they are doing and both gain skill XP. Once per day.</drillDesc>
+        <studyLabel>Hear the Old Tales</studyLabel>
+        <studyDesc>Study with another member. Both gain skill XP. Once per day.</studyDesc>
+        <inspectLabel>Check Their Bow</inspectLabel>
+        <inspectDesc>Look over a junior member's gear. Good upkeep earns praise and poor upkeep earns a sharp word.</inspectDesc>
+        <punishLabel>Send to Gather Wood...</punishLabel>
+        <punishDesc>Set a junior member to tedious labor for a failure, souring their mood. Once per day per member.</punishDesc>
+        <rallyLabel>The All-Maker Watches!</rallyLabel>
+        <rallyDesc>Call on {0} to fight harder for a short while. Once every few days.</rallyDesc>
+        <fallInLabel>Gather, Skaal</fallInLabel>
+        <fallInDesc>Order {0} to gather behind you, up to four deep. They hold position until released.</fallInDesc>
+        <dismissLabel>Return to the Village</dismissLabel>
+        <dismissDesc>Release {0} so they can return to their duties.</dismissDesc>
+    </ESCP.Ranks.RankTrackDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Skaal_Outlander</defName>
+        <label>outlander</label>
+        <description>An outsider the Skaal have chosen to trust, for now.</description>
+        <nextTierOptions>
+            <li>ESCP_Rank_Skaal_Hunter</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Skaal_Hunter</defName>
+        <label>hunter</label>
+        <description>Hunts as the All-Maker allows, and wastes nothing.</description>
+        <minDaysInRank>4</minDaysInRank>
+        <skillRequirements>
+            <Shooting>5</Shooting>
+        </skillRequirements>
+        <minMissionsCompleted>1</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Shooting>400</Shooting>
+            <Melee>200</Melee>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Skaal_Tracker</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Skaal_Tracker</defName>
+        <label>tracker</label>
+        <description>Reads the snow and the wind better than most.</description>
+        <minDaysInRank>9</minDaysInRank>
+        <skillRequirements>
+            <Shooting>8</Shooting>
+        </skillRequirements>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Shooting>500</Shooting>
+            <Melee>250</Melee>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Skaal_Warden</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Skaal_Warden</defName>
+        <label>warden</label>
+        <description>Guards the village and the sacred stones from what walks in the dark.</description>
+        <minDaysInRank>14</minDaysInRank>
+        <skillRequirements>
+            <Shooting>11</Shooting>
+        </skillRequirements>
+        <minMissionsCompleted>4</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Shooting>600</Shooting>
+            <Melee>300</Melee>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Veteran</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Skaal_ShamansHand</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Skaal_ShamansHand</defName>
+        <label>shaman's hand</label>
+        <description>Stands beside the shaman when the All-Maker must be heard.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Shooting>14</Shooting>
+        </skillRequirements>
+        <minMissionsCompleted>6</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Shooting>700</Shooting>
+            <Melee>350</Melee>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Veteran</expedition>
+        <discipline>Combat</discipline>
+    </ESCP.Ranks.RankTierDef>
+
+</Defs>

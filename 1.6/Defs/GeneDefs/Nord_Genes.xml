@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Nord_Constitution</defName>
+        <label>Nord constitution</label>
+        <description>Carriers bear the ancestral hardiness of Atmora, the frozen homeland lost to the Nords' forebears. Centuries of survival in Skyrim's brutal winters has bred an endurance that other peoples cannot match. Cold slows them less, pain stops them less, and exhaustion comes only after greater punishment.</description>
+        <iconPath>UI/Icons/Genes/ESCP_Gene_Imperial_Bearing</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+            <MoveSpeed>0.06</MoveSpeed>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Nord_Battle_Fury</defName>
+        <label>battle fury</label>
+        <description>Carriers carry the blood of Atmoran warriors: ancestors who fought giants, dragons, and one another for sport. When blades are drawn, something older than reason takes over. They hit harder, endure more, and keep fighting long past the point where most would stop.</description>
+        <iconPath>UI/Icons/Genes/ESCP_Gene_Imperial_Discipline</iconPath>
+        <displayCategory>Violence</displayCategory>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <statOffsets>
+            <MeleeHitChance>0.06</MeleeHitChance>
+            <MeleeDodgeChance>0.04</MeleeDodgeChance>
+            <PainShockThreshold>0.05</PainShockThreshold>
+        </statOffsets>
+        <abilities>
+            <li>ESCP_Ability_Nord_BattleCry</li>
+        </abilities>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Nord_Stature</defName>
+        <label>Nord stature</label>
+        <description>Carriers are built on a broader and more enduring frame than most peoples of Tamriel, the legacy of generations forged by hard labor and harder weather. They dig deeper, build faster, and carry more without tiring.</description>
+        <iconPath>UI/Icons/Genes/ESCP_Gene_Imperial_Bearing</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>101</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statOffsets>
+            <MiningYield>0.10</MiningYield>
+            <ConstructSuccessChance>0.05</ConstructSuccessChance>
+            <CarryingCapacity>15</CarryingCapacity>
+        </statOffsets>
+    </GeneDef>
+
+</Defs>

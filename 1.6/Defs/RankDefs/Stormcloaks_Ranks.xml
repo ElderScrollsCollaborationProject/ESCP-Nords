@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ESCP.Ranks.RankTrackDef>
+        <defName>ESCP_RankTrack_Stormcloaks</defName>
+        <label>the Stormcloaks ranks</label>
+        <rootTier>ESCP_Rank_Stormcloaks_Unblooded</rootTier>
+        <owningFaction>ESCP_Faction_Stormcloaks</owningFaction>
+        <collectiveNoun>the Stormcloaks</collectiveNoun>
+        <drillLabel>Bloody the Steel</drillLabel>
+        <drillDesc>Train with any colonist. Both stop what they are doing and both gain skill XP. Once per day.</drillDesc>
+        <studyLabel>Speak of Talos</studyLabel>
+        <studyDesc>Study with another member. Both gain skill XP. Once per day.</studyDesc>
+        <inspectLabel>Check Their Axe</inspectLabel>
+        <inspectDesc>Look over a junior member's gear. Good upkeep earns praise and poor upkeep earns a sharp word.</inspectDesc>
+        <punishLabel>Send to Chop Wood...</punishLabel>
+        <punishDesc>Set a junior member to tedious labor for a failure, souring their mood. Once per day per member.</punishDesc>
+        <rallyLabel>Skyrim for the Nords!</rallyLabel>
+        <rallyDesc>Call on {0} to fight harder for a short while. Once every few days.</rallyDesc>
+        <fallInLabel>To Me, Kin</fallInLabel>
+        <fallInDesc>Order {0} to gather behind you, up to four deep. They hold position until released.</fallInDesc>
+        <dismissLabel>Back to the Camp</dismissLabel>
+        <dismissDesc>Release {0} so they can return to their duties.</dismissDesc>
+    </ESCP.Ranks.RankTrackDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Stormcloaks_Unblooded</defName>
+        <label>Unblooded</label>
+        <description>Has sworn to Ulfric but has yet to draw Imperial blood.</description>
+        <nextTierOptions>
+            <li>ESCP_Rank_Stormcloaks_IceVeins</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Stormcloaks_IceVeins</defName>
+        <label>Ice-Veins</label>
+        <description>Has shown cold courage in the field.</description>
+        <minDaysInRank>4</minDaysInRank>
+        <skillRequirements>
+            <Melee>5</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>1</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>400</Melee>
+            <Shooting>200</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Stormcloaks_BoneBreaker</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Stormcloaks_BoneBreaker</defName>
+        <label>Bone-Breaker</label>
+        <description>A hardened rebel who has broken the Legion's line.</description>
+        <minDaysInRank>9</minDaysInRank>
+        <skillRequirements>
+            <Melee>8</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>500</Melee>
+            <Shooting>250</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Stormcloaks_SnowHammer</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Stormcloaks_SnowHammer</defName>
+        <label>Snow-Hammer</label>
+        <description>Strikes where the Empire is weakest, and others follow.</description>
+        <minDaysInRank>14</minDaysInRank>
+        <skillRequirements>
+            <Melee>11</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>4</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>600</Melee>
+            <Shooting>300</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Veteran</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Stormcloaks_Stormblade</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Stormcloaks_Stormblade</defName>
+        <label>Stormblade</label>
+        <description>One of Ulfric's finest, a name sung in the halls of Windhelm.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Melee>14</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>6</minMissionsCompleted>
+        <trainingXpPerHour>
+            <Melee>700</Melee>
+            <Shooting>350</Shooting>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Faction_Veteran</expedition>
+        <discipline>Combat</discipline>
+    </ESCP.Ranks.RankTierDef>
+
+</Defs>

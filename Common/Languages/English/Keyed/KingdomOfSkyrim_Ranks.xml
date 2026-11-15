@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_KingdomOfSkyrim>Sworn to:</ESCP_Rank_Mentor_KingdomOfSkyrim>
+    <ESCP_Rank_Promote_KingdomOfSkyrim>Raise in the Hall</ESCP_Rank_Promote_KingdomOfSkyrim>
+    <ESCP_Rank_Promoted_Text_KingdomOfSkyrim>The court has spoken. {0} now stands as {1} in the High King's service.</ESCP_Rank_Promoted_Text_KingdomOfSkyrim>
+    <ESCP_Rank_Rally_Title_KingdomOfSkyrim>{0} calls for Skyrim</ESCP_Rank_Rally_Title_KingdomOfSkyrim>
+    <ESCP_Rank_Rally_Text_KingdomOfSkyrim>{0} bellows a war cry, and every one of {1} on the field roars back.</ESCP_Rank_Rally_Text_KingdomOfSkyrim>
+    <ESCP_Rank_InspectionComplete_Commended_KingdomOfSkyrim>{0} checks {1}'s shield and gives a grunt of approval.</ESCP_Rank_InspectionComplete_Commended_KingdomOfSkyrim>
+    <ESCP_Rank_InspectionComplete_Reprimanded_KingdomOfSkyrim>{0} checks {1}'s shield and asks whether a troll chewed it.</ESCP_Rank_InspectionComplete_Reprimanded_KingdomOfSkyrim>
+    <ESCP_Rank_PunishmentAssigned_KingdomOfSkyrim>{0} sends {1} to muck out the stables.</ESCP_Rank_PunishmentAssigned_KingdomOfSkyrim>
+
+</LanguageData>

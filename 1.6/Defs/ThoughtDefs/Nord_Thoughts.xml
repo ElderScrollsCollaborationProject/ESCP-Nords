@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>ESCP_Thought_NordVsMer</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>ESCP.Core.ThoughtWorker_XenotypeDislike</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>elf</label>
+                <baseOpinionOffset>-25</baseOpinionOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="ESCP.Core.ThoughtExtension_XenotypeDislike">
+                <xenotype>ESCP_Xenotype_Nord</xenotype>
+                <indifferentChance>0.1</indifferentChance>
+                <dislikes>
+                    <li MayRequire="Rick.ESCP.Altmer">ESCP_Xenotype_Altmer</li>
+                    <li MayRequire="Rick.ESCP.Ayleids">ESCP_Xenotype_Ayleid</li>
+                    <li MayRequire="Rick.ESCP.Bosmer">ESCP_Xenotype_Bosmer</li>
+                    <li MayRequire="Rick.ESCP.Dunmer">ESCP_Xenotype_Dunmer</li>
+                    <li MayRequire="Rick.ESCP.Dwemer">ESCP_Xenotype_Dwemer</li>
+                    <li MayRequire="Rick.ESCP.Falmer">ESCP_Xenotype_Falmer</li>
+                    <li MayRequire="Rick.ESCP.Falmer">ESCP_Xenotype_SnowElf</li>
+                    <li MayRequire="Rick.ESCP.Maormer">ESCP_Xenotype_Maormer</li>
+                    <li MayRequire="Rick.ESCP.Maormer">ESCP_Xenotype_MaormerLeviathan</li>
+                    <li MayRequire="Rick.ESCP.Orsimer">ESCP_Xenotype_Orsimer</li>
+                </dislikes>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+
+</Defs>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_FanariStrongVoice</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Fanari</pawnKind>
+        <faction>ESCP_Faction_Skaal</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Fanari</firstName>
+                <lastName>Strong-Voice</lastName>
+                <nickname>Village Chief</nickname>
+                <gender>Female</gender>
+                <age>48</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(135, 105, 75)</hairColor>
+                <hairDef>BraidedKnot</hairDef>
+                <skinColorOverride>(205, 188, 168)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_StornCragstrider</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Storn</pawnKind>
+        <faction>ESCP_Faction_Skaal</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Storn</firstName>
+                <lastName>Cragstrider</lastName>
+                <gender>Male</gender>
+                <age>68</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(230, 225, 218)</hairColor>
+                <hairDef>ShortCut</hairDef>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(182, 165, 147)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Frea</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Frea</pawnKind>
+        <faction>ESCP_Faction_Skaal</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Frea</firstName>
+                <lastName>Cragstrider</lastName>
+                <gender>Female</gender>
+                <age>27</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(185, 160, 115)</hairColor>
+                <hairDef>ShaveTopBraid</hairDef>
+                <skinColorOverride>(212, 197, 178)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+</Defs>

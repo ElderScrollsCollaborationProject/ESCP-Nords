@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>ESCP_Quest_CivilWar_WarCamp</defName>
+        <rootSelectionWeight>0.8</rootSelectionWeight>
+        <rootMinPoints>200</rootMinPoints>
+        <defaultChallengeRating>2</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>4~8</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->The War Camp</li>
+                <li>questName->[enemy_name] in the Hills</li>
+                <li>questName->Orders from [ally_name]</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] has word that a company of [enemy_pawnsPlural] has made camp a short march from the colony, close enough to cut the roads and fall on anyone loyal to [ally_name].\n\n[asker_nameDef] wants the camp broken before it can be reinforced. Kill or drive off every soldier there, and keep whatever they leave behind.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="ESCP.Factions.QuestNode_GetSplitSide">
+                    <split>ESCP_FactionSplit_SkyrimCivilWar</split>
+                    <storeAllyAs>ally</storeAllyAs>
+                    <storeEnemyAs>enemy</storeEnemyAs>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <factionToUse>$ally</factionToUse>
+                    <storeAs>asker</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <factionToUse>$enemy</factionToUse>
+                    <sitePartsTags>
+                        <li>
+                            <tag>BanditCamp</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$siteFaction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                    <parms>
+                        <points>$sitePoints</points>
+                    </parms>
+                </li>
+                <li Class="QuestNode_Multiply">
+                    <value1>$rewardValue</value1>
+                    <value2>1.75</value2>
+                    <storeAs>rewardValue</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(12,25)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <destroyOnCleanup>true</destroyOnCleanup>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Camp moved: [resolvedQuestName]</label>
+                                <text>The [enemy_pawnsPlural] have struck their tents and marched off to join the fighting elsewhere. The quest [resolvedQuestName] has expired.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.Destroyed</inSignal>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <sendStandardLetter>true</sendStandardLetter>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>false</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>true</addCampLootReward>
+                                <customLetterLabel>Camp broken</customLetterLabel>
+                                <customLetterText>The [enemy_pawnsPlural] are dead or scattered and their camp is burning. A runner from [ally_name] has brought the colony's pay.</customLetterText>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+    <QuestScriptDef>
+        <defName>ESCP_Quest_CivilWar_HoldTheTown</defName>
+        <rootSelectionWeight>0.6</rootSelectionWeight>
+        <rootMinPoints>150</rootMinPoints>
+        <defaultChallengeRating>2</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>3~6</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Hold the Line</li>
+                <li>questName->[enemy_name] at the Gates</li>
+                <li>questName->A Town for [ally_name]</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] sends word that a column of [enemy_pawnsPlural] is marching on a town loyal to [ally_name], and the garrison there is too thin to hold it alone.\n\nGet there before the attack and keep the townsfolk alive until it breaks. If the town falls, [ally_name] will remember who did not come.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="ESCP.Factions.QuestNode_GetSplitSide">
+                    <split>ESCP_FactionSplit_SkyrimCivilWar</split>
+                    <storeAllyAs>ally</storeAllyAs>
+                    <storeEnemyAs>enemy</storeEnemyAs>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <factionToUse>$ally</factionToUse>
+                    <storeAs>asker</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <factionToUse>$ally</factionToUse>
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>ESCP_Site_SettlementRaidInProgress</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$siteFaction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                    <parms>
+                        <points>$sitePoints</points>
+                    </parms>
+                </li>
+                <li Class="QuestNode_Multiply">
+                    <value1>$rewardValue</value1>
+                    <value2>1.75</value2>
+                    <storeAs>rewardValue</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <sitePartsParams>$sitePartsParams</sitePartsParams>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.MapGenerated</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Set">
+                                <name>pointsForTownsfolk</name>
+                                <value>$(150 + $points * 0.25)</value>
+                            </li>
+                            <li Class="ESCP.Core.RadiantQuests.QuestNode_GeneratePawns">
+                                <storeAs>townsfolk</storeAs>
+                                <faction>$ally</faction>
+                                <pawnGroupKind>Peaceful</pawnGroupKind>
+                                <pointsToUse>$pointsForTownsfolk</pointsToUse>
+                            </li>
+                            <li Class="ESCP.Core.RadiantQuests.QuestNode_GeneratePawns">
+                                <storeAs>attackers</storeAs>
+                                <faction>$enemy</faction>
+                                <pawnGroupKind>Combat</pawnGroupKind>
+                                <pointsToUse>$(150 + $points)</pointsToUse>
+                            </li>
+                            <li Class="ESCP.Core.RadiantQuests.QuestNode_SpawnSettlers">
+                                <inSignal>site.MapGenerated</inSignal>
+                                <pawns>$townsfolk</pawns>
+                                <radius>20</radius>
+                            </li>
+                            <li Class="QuestNode_Delay">
+                                <delayTicks>$(randInt(2500,20000))</delayTicks>
+                                <node Class="QuestNode_Sequence">
+                                    <nodes>
+                                        <li Class="ESCP.Core.RadiantQuests.QuestNode_SpawnRaiders">
+                                            <spawnOnEdge>true</spawnOnEdge>
+                                            <pawns>$attackers</pawns>
+                                            <radius>20</radius>
+                                        </li>
+                                        <li Class="QuestNode_Letter">
+                                            <label>[enemy_name] attack</label>
+                                            <text>The [enemy_pawnsPlural] have reached the town and the fighting has started.</text>
+                                            <letterDef>ThreatBig</letterDef>
+                                            <lookTargets>$attackers</lookTargets>
+                                            <filterDeadPawnsFromLookTargets>true</filterDeadPawnsFromLookTargets>
+                                        </li>
+                                    </nodes>
+                                </node>
+                            </li>
+                            <li Class="QuestNode_Delay">
+                                <delayTicks>60000</delayTicks>
+                                <isQuestTimeout>true</isQuestTimeout>
+                                <node Class="QuestNode_Sequence">
+                                    <nodes>
+                                        <li Class="QuestNode_AnyPawnAlive">
+                                            <pawns>$townsfolk</pawns>
+                                            <node Class="QuestNode_Sequence">
+                                                <nodes>
+                                                    <li Class="QuestNode_GiveRewards">
+                                                        <parms>
+                                                            <allowGoodwill>true</allowGoodwill>
+                                                            <allowRoyalFavor>false</allowRoyalFavor>
+                                                        </parms>
+                                                        <addCampLootReward>false</addCampLootReward>
+                                                        <customLetterLabel>Town held</customLetterLabel>
+                                                        <customLetterText>The town still flies the colors of [ally_name]. [asker_nameDef] has sent the colony's pay along with thanks from the garrison.</customLetterText>
+                                                    </li>
+                                                    <li Class="QuestNode_End">
+                                                        <outcome>Success</outcome>
+                                                    </li>
+                                                </nodes>
+                                            </node>
+                                        </li>
+                                        <li Class="QuestNode_Letter">
+                                            <label>Town lost</label>
+                                            <letterDef>NegativeEvent</letterDef>
+                                            <text>The town has fallen to the [enemy_pawnsPlural] and its people are dead or scattered.</text>
+                                        </li>
+                                        <li Class="QuestNode_End">
+                                            <outcome>Fail</outcome>
+                                            <goodwillChangeAmount>-10</goodwillChangeAmount>
+                                            <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
+                                        </li>
+                                    </nodes>
+                                </node>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(6,12)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Town lost</label>
+                                <text>Nobody came, and the town fell to the [enemy_pawnsPlural]. The quest [resolvedQuestName] has failed.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                                <goodwillChangeAmount>-10</goodwillChangeAmount>
+                                <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.Destroyed</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Town abandoned</label>
+                                <text>Your people left before the fighting was done, and the town fell without them.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                                <goodwillChangeAmount>-10</goodwillChangeAmount>
+                                <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

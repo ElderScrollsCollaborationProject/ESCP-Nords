@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Nord_Freeman</defName>
+        <label>Nord freeman</label>
+        <description>A free citizen of Skyrim's holds. The freeman owes service to no thane by birth, carries the right to bear arms, and may petition the jarl's court directly. It is the baseline of Nord society, the station from which all things are either earned or lost.</description>
+        <tags>
+            <li>ESCP_Title_Nord</li>
+        </tags>
+        <seniority>0</seniority>
+        <favorCost>1</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Nord_Shield_Warrior</defName>
+        <label>shield warrior</label>
+        <description>A Nord who has proven themselves in battle and earned the right to bear a personal shield-mark, a wooden or iron shield hand-painted with a personal sigil. Shield Warriors are counted among the hold's defenders and are expected to answer the muster first.</description>
+        <tags>
+            <li>ESCP_Title_Nord</li>
+        </tags>
+        <seniority>100</seniority>
+        <favorCost>4</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Nord_Huscarl</defName>
+        <label>huscarl</label>
+        <description>The personal sworn guard of a jarl or thane, a huscarl's oath is for life. They stand at the jarl's shoulder in court, lead the garrison in open field, and are the last line between their lord and any threat. Being named a huscarl is among the highest honors a warrior can receive from a jarl's hand.</description>
+        <tags>
+            <li>ESCP_Title_Nord</li>
+        </tags>
+        <seniority>300</seniority>
+        <favorCost>8</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>3</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Nord_Thane</defName>
+        <label>thane</label>
+        <description>A thane holds land directly from the jarl and owes military service and a portion of the hold's revenues in return. Thanes are the backbone of Nord political life: landowners, local lords, and the council on which every jarl ultimately relies. A thane may speak in open court and challenge decisions they believe unjust.</description>
+        <tags>
+            <li>ESCP_Title_Nord</li>
+        </tags>
+        <seniority>600</seniority>
+        <favorCost>12</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>4</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Nord_Jarl</defName>
+        <label>jarl</label>
+        <description>The ruler of one of Skyrim's holds, a warlord, judge, and administrator combined into one title. A jarl answers only to the High King and to tradition. The moot grants the position, but only strength, wisdom, and the loyalty of one's huscarls and thanes makes it last.</description>
+        <tags>
+            <li>ESCP_Title_Nord</li>
+        </tags>
+        <seniority>900</seniority>
+        <favorCost>18</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.5</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>6</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Nord_High_King</defName>
+        <label>High King of Skyrim</label>
+        <labelFemale>High Queen of Skyrim</labelFemale>
+        <description>The High King is chosen by the Moot, a gathering of Skyrim's jarls, and holds authority over all the holds of Skyrim. The position has been vacant or contested more often than not in recent centuries, and the most recent claimant fought for it by right of the Axe rather than the deliberation of the Moot. Whether that claim is honored depends entirely on how many jarls are willing to acknowledge it.</description>
+        <tags>
+            <li>ESCP_Title_Nord</li>
+        </tags>
+        <seniority>1200</seniority>
+        <favorCost>25</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>8</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Stormcloak_Pledgeman</defName>
+        <label>pledgeman</label>
+        <description>The entry rank of the Stormcloak army, a Nord who has spoken the oath and taken up arms for Ulfric's cause. A Pledgeman is expected to provide their own equipment and to answer the muster whenever the call goes out. The rank carries no privileges beyond the right to say they stand on the right side of history.</description>
+        <tags>
+            <li>ESCP_Title_Stormcloak</li>
+        </tags>
+        <seniority>0</seniority>
+        <favorCost>1</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Stormcloak_Scout</defName>
+        <label>Stormcloak scout</label>
+        <description>A scout moves ahead of the main force, reads the terrain, and carries information back to the officers. It is a rank given to those who have demonstrated reliability across at least one campaign, a Pledgeman who came back alive with useful intelligence rather than a corpse in the snow.</description>
+        <tags>
+            <li>ESCP_Title_Stormcloak</li>
+        </tags>
+        <seniority>100</seniority>
+        <favorCost>4</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Stormcloak_Rank</defName>
+        <label>Stormcloak</label>
+        <description>A full Stormcloak is a veteran rebel soldier recognized as fully formed by the army's standards. They carry the blue-and-gray and are trusted to hold the line without an officer's direct order. The rank is a marker of reliability in the chaos of battle. It means that when everything breaks apart, this person does not run.</description>
+        <tags>
+            <li>ESCP_Title_Stormcloak</li>
+        </tags>
+        <seniority>300</seniority>
+        <favorCost>8</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>3</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Stormcloak_Officer</defName>
+        <label>Stormcloak officer</label>
+        <description>A Stormcloak officer commands a detachment in the field, anywhere from a dozen to a hundred fighters. The role is earned by practical merit rather than birth. Officers are the backbone of the Stormcloak chain of command: experienced enough to make field decisions, trusted enough that soldiers follow without question.</description>
+        <tags>
+            <li>ESCP_Title_Stormcloak</li>
+        </tags>
+        <seniority>600</seniority>
+        <favorCost>12</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>4</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Stormcloak_Commander</defName>
+        <label>Stormcloak commander</label>
+        <description>A commander leads a major formation of the Stormcloak army, answering only to Galmar Stone-Fist or to Ulfric himself. Commanders plan engagements, coordinate multiple officer-led detachments, and carry strategic authority. There are very few of them, each forged by years of campaign across Skyrim's holds.</description>
+        <tags>
+            <li>ESCP_Title_Stormcloak</li>
+        </tags>
+        <seniority>900</seniority>
+        <favorCost>18</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.5</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>6</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Stormcloak_Galmar</defName>
+        <label>Galmar</label>
+        <description>Named in honor of Galmar Stone-Fist, Ulfric's most trusted lieutenant and the general who shaped the Stormcloak army into a fighting force capable of standing against the Legion. The title is given to the supreme military commander of the Stormcloaks, the individual who carries the operational weight of the rebellion on their shoulders. There is only ever one.</description>
+        <tags>
+            <li>ESCP_Title_Stormcloak</li>
+        </tags>
+        <seniority>1200</seniority>
+        <favorCost>25</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>8</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Skaal_Member</defName>
+        <label>Skaal</label>
+        <description>A member of the Skaal village, an adult who has been recognized as a full participant in the community's life and responsibilities. The title carries no hierarchy beyond belonging: a Skaal is expected to contribute, to share, and to uphold the All-Maker's ways in everything they do.</description>
+        <tags>
+            <li>ESCP_Title_Skaal</li>
+        </tags>
+        <seniority>0</seniority>
+        <favorCost>1</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Skaal_Hunter</defName>
+        <label>Skaal hunter</label>
+        <description>A hunter who has completed their apprenticeship and proven capable of ranging across Solstheim alone. Hunters are responsible for the bulk of the village's food and materials. Their skill and judgment directly determines how well everyone eats through the winter months.</description>
+        <tags>
+            <li>ESCP_Title_Skaal</li>
+        </tags>
+        <seniority>100</seniority>
+        <favorCost>4</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Skaal_Guardian</defName>
+        <label>Skaal guardian</label>
+        <description>A village guardian is responsible for maintaining watch, training the younger fighters, and responding first when the village comes under threat. The role is not formal (there is no election and no ceremony of installation), but it is deeply respected, because the lives of everyone in the village depend on how well they do it.</description>
+        <tags>
+            <li>ESCP_Title_Skaal</li>
+        </tags>
+        <seniority>300</seniority>
+        <favorCost>8</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>3</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Skaal_Elder</defName>
+        <label>Skaal elder</label>
+        <description>The village elders form a loose advisory council whose wisdom shapes how all major community decisions are made. There is no formal appointment. Elders are simply those who have lived long enough and served deeply enough that the village listens when they speak. Their authority rests entirely on moral weight.</description>
+        <tags>
+            <li>ESCP_Title_Skaal</li>
+        </tags>
+        <seniority>600</seniority>
+        <favorCost>12</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>4</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Skaal_Shaman</defName>
+        <label>Skaal shaman</label>
+        <description>The shaman is the village's spiritual custodian: keeper of the All-Maker's rites, healer, memory-holder, and guide. The role carries an authority that supersedes the chief's in matters of the spirit, and the shaman is expected to speak the All-Maker's will even when it is not what the council wants to hear. There is only ever one shaman at a time, and training their successor takes a decade.</description>
+        <tags>
+            <li>ESCP_Title_Skaal</li>
+        </tags>
+        <seniority>900</seniority>
+        <favorCost>18</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.5</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>6</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <RoyalTitleDef ParentName="ESCP_Base_Empire_Titles" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>ESCP_Title_Skaal_Village_Chief</defName>
+        <label>village chief</label>
+        <description>The village chief leads the Skaal in all practical matters: organizing the hunts, directing the defenses, coordinating with the elders, and speaking for the community to any outsiders who find their way to Solstheim. The chief is chosen by the elders' council and serves for life, or until they are no longer capable. Their authority is respected but never absolute, the All-Maker's way belongs to everyone.</description>
+        <tags>
+            <li>ESCP_Title_Skaal</li>
+        </tags>
+        <seniority>1200</seniority>
+        <favorCost>25</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>0.1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>8</permitPointsAwarded>
+    </RoyalTitleDef>
+
+</Defs>

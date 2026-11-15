@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>ESCP_Faction_Kingdom_of_Skyrim</defName>
+        <label>Kingdom of Skyrim</label>
+        <description>The Kingdom of Skyrim is ruled by jarls: warlords who answer to tradition, to the Moot, and to whoever is strong enough to call themselves High King. The Nords are a martial people hardened by centuries of survival in one of Tamriel's most unforgiving landscapes, cold enough to kill the unready, wild enough to produce warriors who have little fear of anything else. They do not build empires; they hold ground, honor their dead, and remember past battles with more clarity than most peoples remember yesterday. Their mead halls are the center of their political life, their gods are ancient and demanding, and their idea of a fitting end is to die with a weapon in hand, earning a seat in Sovngarde.</description>
+        <colorSpectrum>
+            <li>(0.58, 0.06, 0.13)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <pawnSingular>Nord</pawnSingular>
+        <pawnsPlural>Nords</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.3</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>High-King</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Empire</factionIconPath>
+        <techLevel>Medieval</techLevel>
+        <fixedName>Kingdom of Skyrim</fixedName>
+        <allowedCultures>
+            <li>ESCP_Culture_Nord</li>
+        </allowedCultures>
+
+        <royalTitleTags>
+            <li>ESCP_Title_Nord</li>
+        </royalTitleTags>
+        <royalFavorLabel>Nordic Honor</royalFavorLabel>
+        <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>Eight Divines</ideoName>
+        <ideoDescription>The Eight Divines (Akatosh, Arkay, Dibella, Julianos, Kynareth, Mara, Stendarr, and Zenithar) are the traditional Imperial pantheon that the holds of Skyrim have nominally maintained since the end of the Great War. The Kingdom's jarls are not enthusiastic about the absence of Talos from the count, and many privately tend his memory, but they understand the diplomatic cost of open defiance and they govern people who cannot afford another war. Eight names in the temple is pragmatism. It is not surrender, and most priests who say eight names know exactly who is missing.</ideoDescription>
+        <deityPresets>
+            <li>
+                <nameType><name>Akatosh</name><type>Dragon God of Time and chief of the Divines</type></nameType>
+                <gender>Male</gender>
+                <iconPath>UI/Deities/ESCP_DeityAkatosh</iconPath>
+            </li>
+            <li>
+                <nameType><name>Kynareth</name><type>goddess of air, sky, and the natural world</type></nameType>
+                <gender>Female</gender>
+                <iconPath>UI/Deities/ESCP_DeityKynareth</iconPath>
+            </li>
+            <li>
+                <nameType><name>Mara</name><type>goddess of love, family, and compassion</type></nameType>
+                <gender>Female</gender>
+                <iconPath>UI/Deities/ESCP_DeityMara</iconPath>
+            </li>
+            <li>
+                <nameType><name>Dibella</name><type>goddess of beauty, art, and affection</type></nameType>
+                <gender>Female</gender>
+                <iconPath>UI/Deities/ESCP_DeityDibella</iconPath>
+            </li>
+            <li>
+                <nameType><name>Stendarr</name><type>god of mercy, righteous might, and divine justice</type></nameType>
+                <gender>Male</gender>
+                <iconPath>UI/Deities/ESCP_DeityStendarr</iconPath>
+            </li>
+            <li>
+                <nameType><name>Arkay</name><type>god of the cycle of life, death, and funerary custom</type></nameType>
+                <gender>Male</gender>
+                <iconPath>UI/Deities/ESCP_DeityArkay</iconPath>
+            </li>
+            <li>
+                <nameType><name>Julianos</name><type>god of wisdom, logic, and scholarship</type></nameType>
+                <gender>Male</gender>
+                <iconPath>UI/Deities/ESCP_DeityJulianos</iconPath>
+            </li>
+            <li>
+                <nameType><name>Zenithar</name><type>god of work, commerce, and earthly endeavor</type></nameType>
+                <gender>Male</gender>
+                <iconPath>UI/Deities/ESCP_DeityZenithar</iconPath>
+            </li>
+        </deityPresets>
+        <styles>
+            <li>ESCP_Style_Nord</li>
+        </styles>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ESCP_Meme_EightDivines</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Nord_Child</li>
+                    <li>ESCP_Backstory_Nord_Noble_Child</li>
+                    <li>ESCP_Backstory_Nord_Citizen</li>
+                    <li>ESCP_Backstory_Nord_Military</li>
+                    <li>ESCP_Backstory_Nord_Skald</li>
+                    <li>ESCP_Backstory_Nord_Merchant</li>
+                    <li>ESCP_Backstory_Nord_Thane</li>
+                    <li>ESCP_Backstory_Nord_Huscarl</li>
+                </categories>
+                <commonality>0.95</commonality>
+            </li>
+        </backstoryFilters>
+
+        <caravanTraderKinds>
+            <li>ESCP_Caravan_Nord_Trader</li>
+            <li>ESCP_Caravan_Nord_Quartermaster</li>
+        </caravanTraderKinds>
+
+        <visitorTraderKinds>
+            <li>ESCP_Caravan_Nord_Trader</li>
+        </visitorTraderKinds>
+
+        <baseTraderKinds>
+            <li>ESCP_Caravan_Nord_Trader</li>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-60~40</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Nord_Warrior>12</ESCP_Pawnkind_Nord_Warrior>
+                    <ESCP_Pawnkind_Nord_Archer>6</ESCP_Pawnkind_Nord_Archer>
+                    <ESCP_Pawnkind_Nord_Berserker>4</ESCP_Pawnkind_Nord_Berserker>
+                    <ESCP_Pawnkind_Nord_Huscarl>3</ESCP_Pawnkind_Nord_Huscarl>
+                    <ESCP_Pawnkind_Nord_Thane>1</ESCP_Pawnkind_Nord_Thane>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Nord_Citizen>20</ESCP_Pawnkind_Nord_Citizen>
+                    <ESCP_Pawnkind_Nord_Merchant>10</ESCP_Pawnkind_Nord_Merchant>
+                    <ESCP_Pawnkind_Nord_Skald>5</ESCP_Pawnkind_Nord_Skald>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <ESCP_Pawnkind_Nord_Trader>1</ESCP_Pawnkind_Nord_Trader>
+                    <ESCP_Pawnkind_Nord_Quartermaster>1</ESCP_Pawnkind_Nord_Quartermaster>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>4</Dromedary>
+                    <Alpaca>3</Alpaca>
+                </carriers>
+                <guards>
+                    <ESCP_Pawnkind_Nord_Warrior>10</ESCP_Pawnkind_Nord_Warrior>
+                    <ESCP_Pawnkind_Nord_Archer>4</ESCP_Pawnkind_Nord_Archer>
+                    <ESCP_Pawnkind_Nord_Huscarl>2</ESCP_Pawnkind_Nord_Huscarl>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Nord_Citizen>8</ESCP_Pawnkind_Nord_Citizen>
+                    <ESCP_Pawnkind_Nord_Warrior>12</ESCP_Pawnkind_Nord_Warrior>
+                    <ESCP_Pawnkind_Nord_Archer>8</ESCP_Pawnkind_Nord_Archer>
+                    <ESCP_Pawnkind_Nord_Berserker>4</ESCP_Pawnkind_Nord_Berserker>
+                    <ESCP_Pawnkind_Nord_Huscarl>5</ESCP_Pawnkind_Nord_Huscarl>
+                    <ESCP_Pawnkind_Nord_Thane>2</ESCP_Pawnkind_Nord_Thane>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+
+        <modExtensions Inherit="False">
+            <li Class="ESCP.Factions.FactionExtension_PermanentlyAlliedTo">
+                <alliedFactionDefs>
+                    <li MayRequire="Rick.ESCP.Imperials">ESCP_Faction_Imperial</li>
+                </alliedFactionDefs>
+            </li>
+            <li Class="ESCP_RaceTools.FactionProperties">
+                <factionTags>
+                    <li>ESCP_AllFlags</li>
+                </factionTags>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Kingdom of Skyrim</newLabel>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li>ESCP_Faction_Stormcloaks</li>
+                </hostileFactionDefs>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

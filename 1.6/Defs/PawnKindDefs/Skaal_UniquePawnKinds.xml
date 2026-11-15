@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <PawnKindDef Name="ESCP_Skaal_UniqueCharacterBase" ParentName="ESCP_SkaalkindBase" Abstract="True">
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <combatPower>200</combatPower>
+        <apparelMoney>9999</apparelMoney>
+        <gearHealthRange>1.0</gearHealthRange>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <weaponMoney>9999</weaponMoney>
+        <maxGenerationAge>99</maxGenerationAge>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <disallowedTraits>
+            <li>Brawler</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Skaal_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Fanari</defName>
+        <label>Village Chief</label>
+        <factionLeader>true</factionLeader>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>8~14</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>5~10</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>4~9</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+            <ESCP_Trait_Nord_Skald_Verse>0</ESCP_Trait_Nord_Skald_Verse>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Skaal_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Storn</defName>
+        <label>Skaal shaman</label>
+        <combatPower>80</combatPower>
+        <isFighter>false</isFighter>
+        <weaponMoney>0</weaponMoney>
+        <skills>
+            <li>
+                <skill>Intellectual</skill>
+                <range>8~14</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>7~12</range>
+            </li>
+            <li>
+                <skill>Medicine</skill>
+                <range>5~10</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Skald_Verse>0</ESCP_Trait_Nord_Skald_Verse>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Skaal_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Frea</defName>
+        <label>Skaal warrior</label>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~14</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>5~10</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>4~8</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <ESCP_Trait_Nord_Battle_Cry>0</ESCP_Trait_Nord_Battle_Cry>
+            <ESCP_Trait_Nord_Hardiness>0</ESCP_Trait_Nord_Hardiness>
+        </forcedTraits>
+    </PawnKindDef>
+
+</Defs>

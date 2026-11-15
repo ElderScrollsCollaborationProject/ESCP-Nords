@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Windhelm_Child</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Windhelm_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Windhelm child</title>
+        <titleShort>City child</titleShort>
+        <description>[PAWN_nameDef] grew up in Windhelm. The city smelled like smoke and river ice, and the Argonians weren't allowed past the docks. Nobody explained why. The Talos shrine near the Gray Quarter had a rag thrown over it most days. Everyone knew who put it there, and everyone left it alone. By the time [PAWN_pronoun] was old enough to ask questions, [PAWN_pronoun] already had most of the answers.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>3</Social>
+            <Melee>2</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Displaced_Child</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Displaced_Child</identifier>
+        <slot>Childhood</slot>
+        <title>displaced Nord child</title>
+        <titleShort>Displaced child</titleShort>
+        <description>[PAWN_nameDef]'s father lost the farm. [PAWN_pronoun] was seven. The reasons changed depending on who was telling it (taxes, bad luck, a Legion officer nobody wanted to argue with) but the result was the same. Three winters moving between holds, sleeping on other people's floors. [PAWN_pronoun] learned young that asking the Empire for help was a waste of breath.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>3</Plants>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Rebel_Child</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Rebel_Child</identifier>
+        <slot>Childhood</slot>
+        <title>rebel family child</title>
+        <titleShort>Rebel child</titleShort>
+        <description>[PAWN_nameDef]'s family had been in this fight longer than [PAWN_pronoun] had been alive. The bow in the corner wasn't decorative. Neither was the dented shield on the wall, or the scar on [PAWN_pronoun]'s uncle's neck that he never talked about. Nobody sat [PAWN_pronoun] down and explained the cause. They just handed [PAWN_pronoun] the bow.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Child</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Soldier</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Soldier</identifier>
+        <slot>Adulthood</slot>
+        <title>Stormcloak soldier</title>
+        <titleShort>Soldier</titleShort>
+        <description>[PAWN_nameDef] answered Ulfric's call and spent the better part of three years getting hurt in the mountains. Galmar Stone-Fist's training was run until you dropped, get up, run again. The actual fighting was nothing like the stories. Half of it was standing on a ridge in the dark waiting for a supply cart that never came. [PAWN_pronoun] learned to hold the line. That was enough.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Military</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Officer</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Officer</identifier>
+        <slot>Adulthood</slot>
+        <title>Stormcloak officer</title>
+        <titleShort>Officer</titleShort>
+        <description>Nobody handed [PAWN_nameDef] the rank. [PAWN_pronoun] started at the back of a column doing what the officer ahead said, and a year later [PAWN_pronoun] was the officer. Mountain fighting changed [PAWN_possessive] thinking. You stop being precious about plans when an ambush rewrites everything in twelve seconds. [PAWN_pronoun] made calls, kept soldiers alive, and was wrong less often than the other side.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Military</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>3</Melee>
+            <Social>3</Social>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Scout</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Scout</identifier>
+        <slot>Adulthood</slot>
+        <title>Stormcloak scout</title>
+        <titleShort>Scout</titleShort>
+        <description>[PAWN_nameDef] scouted for the Stormcloaks. Weeks at a stretch alone in the hills, no fire, tracking Legion columns and getting back without being seen. [PAWN_pronoun] talked [PAWN_possessive] way through two checkpoints over the years, and spent one afternoon in a snowdrift while a patrol searched the treeline thirty feet away. [PAWN_pronoun] stopped being afraid of much after that.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Military</li>
+        </spawnCategories>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Plants>3</Plants>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Talos_Devotee</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Talos_Devotee</identifier>
+        <slot>Adulthood</slot>
+        <title>Talos devotee</title>
+        <titleShort>Devotee</titleShort>
+        <description>The agents came twice. First time they took apart [PAWN_nameDef]'s shrine and left a warning. [PAWN_pronoun] rebuilt it smaller. Second time they took [PAWN_possessive] neighbor instead. [PAWN_pronoun] didn't rebuild after that. Moved the prayers to memory and started finding others who felt the same way. The Stormcloak recruiter found [PAWN_pronoun] about six months later.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Citizen</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Stormcloak_Blacksmith</defName>
+        <identifier>ESCP_Backstory_Stormcloak_Blacksmith</identifier>
+        <slot>Adulthood</slot>
+        <title>Windhelm blacksmith</title>
+        <titleShort>Blacksmith</titleShort>
+        <description>[PAWN_nameDef] ran a forge in Windhelm: weapons, tools, patch-up work. Nothing special about it. But Stormcloak supply lines ran through the city, and when the army needed blades fast and the coin was short, it was people like [PAWN_nameDef] who covered the gap. [PAWN_pronoun] never marched. Didn't need to.</description>
+        <spawnCategories>
+            <li>ESCP_Backstory_Stormcloak_Citizen</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Construction>2</Construction>
+        </skillGains>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+    </BackstoryDef>
+
+</Defs>
