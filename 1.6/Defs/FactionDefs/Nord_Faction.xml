@@ -213,6 +213,56 @@
                     <li>RandomDrop</li>
                 </arrivalModes>
             </li>
+            <li Class="ESCP.Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>ESCP_Enlistment_KingdomOfSkyrim</li>
+                </enlistOptionsDefs>
+            </li>
+            <li Class="ESCP.Ranks.FactionExtension_RankTracks">
+                <rankTracks>
+                    <li>ESCP_RankTrack_KingdomOfSkyrim</li>
+                </rankTracks>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_NamedSettlement">
+                <settlementNames>
+                    <li>Whiterun</li>
+                    <li>Riverwood</li>
+                    <li>Rorikstead</li>
+                    <li>Fort Greymoor</li>
+                    <li>Solitude</li>
+                    <li>Dragon Bridge</li>
+                    <li>Fort Hraggstad</li>
+                    <li>Morthal</li>
+                    <li>Stonehills</li>
+                    <li>Fort Snowhawk</li>
+                    <li>Markarth</li>
+                    <li>Karthwasten</li>
+                    <li>Old Hroldan</li>
+                    <li>Fort Sungard</li>
+                    <li>Falkreath</li>
+                    <li>Helgen</li>
+                    <li>Fort Neugrad</li>
+                    <li>Windhelm</li>
+                    <li>Kynesgrove</li>
+                    <li>Darkwater Crossing</li>
+                    <li>Fort Amol</li>
+                    <li>Riften</li>
+                    <li>Ivarstead</li>
+                    <li>Shor's Stone</li>
+                    <li>Fort Greenwall</li>
+                    <li>Dawnstar</li>
+                    <li>Fort Dunstad</li>
+                    <li>Winterhold</li>
+                    <li>Fort Kastav</li>
+                </settlementNames>
+                <preferredHilliness />
+                <clustered>true</clustered>
+                <allowedBiomes>
+                    <li>BorealForest</li>
+                    <li>Tundra</li>
+                </allowedBiomes>
+            </li>
+            <li Class="ESCP.Core.Crime.FactionExtension_Law" />
         </modExtensions>
     </FactionDef>
 

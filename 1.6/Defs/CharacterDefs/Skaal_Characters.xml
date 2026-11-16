@@ -49,7 +49,7 @@
             </li>
             <li Class="ESCP.Core.CharacterAppearanceDefinition">
                 <hairColor>(230, 225, 218)</hairColor>
-                <hairDef>ShortCut</hairDef>
+                <hairDef MayRequire="Ludeon.RimWorld.Anomaly">ShortCut</hairDef>
                 <beardDef>Full</beardDef>
                 <skinColorOverride>(182, 165, 147)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>

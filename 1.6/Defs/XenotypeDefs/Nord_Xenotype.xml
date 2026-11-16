@@ -16,6 +16,13 @@
             <li>Skin_Melanin3</li>
             <li>Skin_Melanin4</li>
         </genes>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.RaceProperties">
+                <hypothermiaResistant>true</hypothermiaResistant>
+                <frostbiteResistant>true</frostbiteResistant>
+                <hypothermiaDef>Hypothermia</hypothermiaDef>
+            </li>
+        </modExtensions>
     </XenotypeDef>
 
 </Defs>
